@@ -4,10 +4,13 @@
 Disciplina que planeja o desenvolvimento de um Front-End a partir de uma demanda externa. 
 
 ## Componentes
+
+- Giovani Villela
+- Maria Martinelli
+- Matheus Mannarino
+- Miguel Campos
 - Pedro Torres
-- Nome
-- Nome
-- Nome
+
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
