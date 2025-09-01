@@ -4,7 +4,7 @@
 Disciplina que planeja o desenvolvimento de um Front-End a partir de uma demanda externa. 
 
 ## Componentes
-- Nome
+- Pedro Torres
 - Nome
 - Nome
 - Nome
