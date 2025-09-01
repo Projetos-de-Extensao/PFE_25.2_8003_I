@@ -1,8 +1,7 @@
 ---
-repo_url: https://github.com/jonh-carvalho/PFE_25.1_8001
-site_author: Nome do GrupoJonh Carvalho
-site_name: PFE_25.1_8001
-copyright: Copyright ©️ 2025, jonh-carvalho / 2025, Jonh Carvalho
+repo_url: https://projetos-de-extensao.github.io/PFE_25.2_8003_I/
+site_author: PFE_25.2_8003
+site_name: PFE_25.2_8003
 
 extra_css:
   - css/extra.css
@@ -105,15 +104,6 @@ theme:
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
-
-#nav: 
- # - Home: index.md
-  #- Disciplina:
-   #   -  Aulas: Disciplina/Aulas.md
-    #  -  Github: github.md
-     # -  Mkdocs: mkdocs.md
-      #-  CodeSpace: Codespace.md 
-  #- React: 
    #   -  Introdução: React/01_Intro.md
     #  -  Componentes: React/Componentes.md
      # -  Hooks: React/Hooks.md
