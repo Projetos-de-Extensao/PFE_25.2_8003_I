@@ -3,6 +3,12 @@
 ## Sobre 
 Disciplina que planeja o desenvolvimento de um Front-End a partir de uma demanda externa. 
 
+## Componentes
+- Nome
+- Nome
+- Nome
+- Nome
+
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
 
