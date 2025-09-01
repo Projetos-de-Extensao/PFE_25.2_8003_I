@@ -6,10 +6,10 @@ Disciplina que planeja o desenvolvimento de um Front-End a partir de uma demanda
 ## Componentes
 
 - Giovanni Villela
-- Matheus
-- Maria
-- Miguel
-- Pedro Torres
+- Maria Martinelli
+- Matheus Mannarino
+- Miguel Campos
+- Pedro Torres.
 
 
 ## Screenshots
