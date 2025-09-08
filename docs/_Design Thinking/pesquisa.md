@@ -31,8 +31,8 @@ Funcionalidades:
 2.	Papéis definidos: administradores, responsáveis, colaboradores e convidados
 3.	Relatórios de progresso e dashboards visuais que mostram status das tarefas.
 
- <img width="1344" height="557" alt="Image" src="https://github.com/user-attachments/assets/db3ba676-c528-4a27-aa7c-ab41b41c27ca" />
 
 Site 4: Artia
+<img width="1344" height="557" alt="Image" src="https://github.com/user-attachments/assets/db3ba676-c528-4a27-aa7c-ab41b41c27ca" />
 
 Funcionalidades: Quadro Kanban, apontamento de horas, Gantt avançado, EAP, relatórios financeiros e dashboards em português.
