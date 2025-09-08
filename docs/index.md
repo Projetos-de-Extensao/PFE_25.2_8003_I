@@ -15,24 +15,6 @@ hide:
 
     Giovanni Villela, Maria Martinelli, Matheus Mannarino, Miguel Campos, Pedro Torres.
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PFE_25.1_8001_I)
+    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PFE_25.2_8003_I)
 
 </div>
-
-!!! warning "Projeto Front-End"
-
-    Disciplina que apresenta os passos para a construção de Projeto Front-End.
-
-    **Linguagens**: HTML, CSS e Javascript
-
-    **Tecnologias**:
-
-    * Visual Studio Code
-    * Github
-
-    As APs deverão ser enviadas no Github e publicadas no github pages.
-
-
-
-
-
