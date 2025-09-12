@@ -1,0 +1,35 @@
+@startmindmap mapamental
+* **Cadastro de Projetos - IBMEC**
+** Usuários
+*** Empresas Externas
+**** Cadastrar projetos
+**** Acompanhar status
+**** Avaliar resultados
+*** Coordenação
+**** Aprovar projetos
+**** Gerenciar usuários
+**** Gerar relatórios
+*** Professores
+**** Orientar projetos
+**** Avaliar entregas
+**** Interagir com alunos
+*** Alunos
+**** Inscrever-se em projetos
+**** Submeter entregas
+**** Acompanhar feedback
+** Funcionalidades
+*** Cadastro/autenticação de usuários
+*** Cadastro e aprovação de projetos
+*** Inscrição de alunos
+*** Atribuição de professores
+*** Upload de documentos
+*** Histórico de projetos
+*** Avaliação dos projetos
+** Requisitos Técnicos
+*** Interface web responsiva
+*** Integração com sistemas IBMEC
+*** Controle de permissões
+*** Logs de atividades
+*** Relatórios customizáveis
+@endmindmap
+
