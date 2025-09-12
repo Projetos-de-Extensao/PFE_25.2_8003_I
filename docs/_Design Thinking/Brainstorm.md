@@ -16,114 +16,49 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ## Brainstorm
  
 ## Versão 1.0
- 
-## Perguntas
- 
-### 1. Qual o objetivo principal da aplicação?
- 
-<p align = "justify">
-<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
-</p>
- 
-<b>ZZZ</b> - A plataforma deve fornece...
- 
-<b>YYYY</b> - O objetivo da aplicação é....
- 
-<b>WWWW</b> - O principal objetivo da aplicação é a...
- 
-<b>KKKK</b> - A plataforma deve gerenciar...
-</p>
- 
----
- 
-### 2. Como será o processo para cadastrar um novo clientetorneio?
- 
-<p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
 
-<b>ZZZZ</b> - O cliente...
- 
-<b>KKK</b> - O cliente...
- 
----
- 
-### 3. Como será a forma de adicionar produtos?
- 
-<p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
-</p>
- 
-<p align = "justify">
-<b>YYYYY</b> - O produto tem...
-</p>
- 
-<b>ZZZZ</b> - O produto....
- 
-<b>XXXX</b> - O produto....
+- **Usuários do Sistema**
+   - Empresas externas: cadastrar projetos, acompanhar status, avaliar resultados.
+   - Coordenação: aprovar projetos, gerenciar usuários, gerar relatórios.
+   - Professores: orientar projetos, avaliar entregas, interagir com alunos.
+   - Alunos: inscrever-se em projetos, submeter entregas, acompanhar feedback.
 
- 
----
- 
-### 4. Outras perguntas pertinentes ao contexto
+- **Funcionalidades Principais**
+   - Cadastro e autenticação de usuários por perfil.
+   - Cadastro de projetos com campos personalizados (nome, descrição, área, empresa proponente, etc).
+   - Fluxo de aprovação de projetos pela coordenação.
+   - Inscrição de alunos em projetos disponíveis.
+   - Atribuição de professores orientadores.
+   - Espaço para upload de documentos e entregas.
+   - Sistema de notificações (e-mail, painel).
+   - Dashboard com indicadores para cada perfil.
+   - Histórico de projetos realizados.
+   - Avaliação dos projetos por empresas e professores.
 
-<p align = "justify">
-<b>XXXX</b> - Com a localização...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>ZZZ</b> - O cliente...
- 
----
- 
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
-<p align = "justify">
-<b>XXX</b> - O cliente....
-</p>
- 
-### 6. Quais informações seriam interessante para o cliente?
-<p align = "justify">
-   <b>XXX</b> - Informações...
-   
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
+- **Requisitos Técnicos**
+   - Interface web responsiva.
+   - Integração com sistemas acadêmicos do IBMEC.
+   - Controle de permissões por perfil.
+   - Logs de atividades e auditoria.
+   - Exportação de dados (PDF, Excel).
 
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
-   
-</p>
- 
-### Requisitos elicitados
- 
-|ID|Descrição|
-|----|-------------|
-|BS01| O cliente...|
-|BS02| O cliente...|
-|BS03| O cliente...|
-|BS04| O cliente...|
-|BS05| O cliente...|
-|BS06| O cliente...|
-|BS07| O cliente...|
-|BS08| O cliente...|
-|BS09| O cliente...|
-|BS10| O produto...|
-|BS11| O produto...|
-|BS12| O produto...|
-|BS13| O produto...|
-|BS14| O produto...|
-|BS15| O produto...|
+- **Outros Pontos**
+   - Possibilidade de feedback anônimo das empresas sobre os alunos.
+   - Suporte a anexos de diferentes formatos.
+   - Filtros de busca avançada por área, status, empresa, etc.
+   - Relatórios customizáveis para coordenação.
  
 ## Conclusão
 <p align = "justify">
 Através da aplicação da técnica, foi possível elicitar alguns dos primeiros requisitos do projeto.
 </p>
+
 ## Referências Bibliográficas
  
-> BARBOSA, S. D. J; DA SILVA, B. S. Interação humano-computador. Elsevier, 2010.
+BARBOSA, S. D. J; DA SILVA, B. S. Interação humano-computador. Elsevier, 2010.
  
  
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |
+| 12/09/2025 | 1.0 | Criação do documento |Matheus Mannarino|
