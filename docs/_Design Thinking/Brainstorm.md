@@ -17,13 +17,14 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ## Versão 1.0
 
-- **Usuários do Sistema**
+**Usuários do Sistema**
    - Empresas externas: cadastrar projetos, acompanhar status, avaliar resultados.
    - Coordenação: aprovar projetos, gerenciar usuários, gerar relatórios.
    - Professores: orientar projetos, avaliar entregas, interagir com alunos.
    - Alunos: inscrever-se em projetos, submeter entregas, acompanhar feedback.
 
-- **Funcionalidades Principais**
+
+**Funcionalidades Principais**
    - Cadastro e autenticação de usuários por perfil.
    - Cadastro de projetos com campos personalizados (nome, descrição, área, empresa proponente, etc).
    - Fluxo de aprovação de projetos pela coordenação.
@@ -35,14 +36,16 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
    - Histórico de projetos realizados.
    - Avaliação dos projetos por empresas e professores.
 
-- **Requisitos Técnicos**
+
+**Requisitos Técnicos**
    - Interface web responsiva.
    - Integração com sistemas acadêmicos do IBMEC.
    - Controle de permissões por perfil.
    - Logs de atividades e auditoria.
    - Exportação de dados (PDF, Excel).
 
-- **Outros Pontos**
+
+**Outros Pontos**
    - Possibilidade de feedback anônimo das empresas sobre os alunos.
    - Suporte a anexos de diferentes formatos.
    - Filtros de busca avançada por área, status, empresa, etc.
