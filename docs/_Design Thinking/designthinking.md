@@ -19,9 +19,11 @@ title: Design Thinking
 - **Contexto do Projeto**: 
 
     O IBMEC busca fortalecer a integração entre o meio acadêmico e o mercado. Surge então a oportunidade de criar um aplicativo web que centralize o cadastro, a gestão e o acompanhamento de projetos, promovendo maior visibilidade e organização.
+
 - **Objetivo**: 
 
     O objetivo do projeto é desenvolver um aplicativo web que facilite a interação entre empresas, professores, coordenação e alunos, possibilitando que projetos sejam cadastrados, aprovados, orientados e executados de maneira prática.
+
 - **Público-Alvo**:  
     Empresas externas: que desejam propor desafios e projetos.
 
@@ -31,6 +33,7 @@ title: Design Thinking
     projetos.
     
     Alunos do IBMEC: que poderão participar ativamente dos projetos.
+
 - **Escopo**:
 
     Empresa: Cadastro da empresa e submissão de propostas de projeto com descrição, requisitos e objetivos.
@@ -115,6 +118,7 @@ title: Design Thinking
 - **Problema Central**:
 
     Como podemos criar uma plataforma centralizada que conecte empresas externas, coordenação, professores e alunos do IBMEC, facilitando o cadastro, a validação e o acompanhamento de projetos acadêmicos em parceria com o mercado?
+
 - **Pontos de Vista (POV)**:
 
     Empresas externas precisam de um meio rápido e estruturado para cadastrar projetos e acompanhar seus resultados.
