@@ -37,13 +37,11 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 
 ### 3. Requisitos Técnicos
 - Interface web responsiva.
-- Integração com sistemas acadêmicos do IBMEC.
 - Controle de permissões por perfil.
 - Logs de atividades e auditoria.
 - Exportação de dados (PDF, Excel).
 
 ### 4. Outros Pontos
-- Possibilidade de feedback anônimo das empresas sobre os alunos.
 - Suporte a anexos de diferentes formatos.
 - Filtros de busca avançada por área, status, empresa, etc.
 - Relatórios customizáveis para coordenação.
