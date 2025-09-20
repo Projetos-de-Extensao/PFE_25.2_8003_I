@@ -70,11 +70,13 @@ Tarefa: **Validação de Projetos**
 - Ação 3: Aprova, solicita ajustes ou reprova o projeto.
 
 Tarefa: **Acompanhamento de Projetos**
+
 - Ação 1: Professor acessa a lista de projetos em andamento.
 - Ação 2: Monitora entregas dos alunos no sistema.
 - Ação 3: Dá feedback e avalia etapas concluídas.
 
 Tarefa: **Participação em Projetos**
+
 - Ação 1: Aluno acessa a lista de projetos aprovados.
 - Ação 2: Executa atividades atribúidas ao projeto.
 - Ação 3: Submete entregas ao sistema.
