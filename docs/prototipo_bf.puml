@@ -1,0 +1,79 @@
+@startuml
+salt
+{
+' --- Tela de Login ---
+{+
+  Login
+  [ Usuário:        |___________ ]
+  [ Senha:          |___________ ]
+  [ Entrar ]
+}
+
+--
+' --- Tela de Cadastro de Projeto ---
+{+
+  Cadastro de Projeto
+  [ Título:         |________________________ ]
+  [ Descrição:      |________________________ ]
+  [ Requisitos:     |________________________ ]
+  [ Submeter ]
+}
+
+--
+' --- Tela de Validação de Projetos ---
+{+
+  Validação de Projetos
+  {#
+    Projeto X
+    () Aprovar
+    () Solicitar Ajustes
+    () Reprovar
+    [ Confirmar ]
+  }
+  {#
+    Projeto Y
+    () Aprovar
+    () Solicitar Ajustes
+    () Reprovar
+    [ Confirmar ]
+  }
+}
+
+--
+
+' --- Tela de Acompanhamento de Projetos ---
+{+
+  Acompanhamento
+  {#
+    [ Projeto A ]
+    - Entrega 1: ✔ concluída
+    - Entrega 2: ✖ pendente
+    [ Dar Feedback ]
+  }
+  {#
+    [ Projeto B ]
+    - Entrega 1: ✔ concluída
+    - Entrega 2: ✔ concluída
+    [ Dar Feedback ]
+  }
+}
+
+--
+' --- Tela de Participação do Aluno ---
+{+
+  Participação do Aluno
+  {#
+    [ Projeto A ]
+    - Atividade: Implementar API
+    - Prazo: 15/10
+    [ Enviar Entrega ]
+  }
+  {#
+    [ Projeto B ]
+    - Atividade: Criar Dashboard
+    - Prazo: 22/10
+    [ Enviar Entrega ]
+  }
+}
+}
+@enduml

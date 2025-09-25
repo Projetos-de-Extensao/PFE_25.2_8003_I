@@ -8,71 +8,14 @@ title: Protótipo
 A construção do protótipo de alta fidelidade auxilia a equipe de desenvolvimento a encontrar um nível de detalhes abrangentes, extrair funcionalidades, testar usabilidade, e também fornece uma base para o gerenciamento do projeto pois com o protótipo é possível realizar estimativas de quanto tempo será necessário desempenhar em cada funcionalidade.
 </p>
 
-## Metodologia
-
-<p align = "justify">
-Iniciamos o projeto através dos levantamentos iniciais da equipe, após discussões a ferramenta Figma foi selecionada para produzir o protótipo de alta fidelidade com auxílio do Material Design Color Tool.
-</p>
 
 ## Protótipo de baixa fidelidade
 
 ### Versão 1.0
 
-### Tela Login
 
-Prototipo 1
-![Alt text](https://example.com/image.jpg "Image Title")
+![Protótipo de Baixa Fideliade](../assets/prototipo_bf.png "Protótipo de Baixa Fidelidade")
 
-### Tela Cadastro 1
-
-[![Prototipo 2]
-
-### Tela Cadastro 2
-
-[![Prototipo 3]
-
-### Tela Esqueceu Senha
-
-[![Prototipo 4]
-
-### Tela do Feed
-
-[![Prototipo 5]
-
-### Tela Feed com configurações
-
-[![Prototipo 6]
-
-### Tela Perfil
-
-[![Prototipo 7]
-
-### Tela Cadastrar torneio 1
-
-[![Prototipo 8]
-### Tela Cadastrar torneio 2
-
-[![Prototipo 9]
-
-### Tela Cadastrar torneio 3
-
-[![Prototipo 10]
-
-### Tela Cadastrar torneio 4
-
-[![Prototipo 11]
-
-### Tela com meus torneios
-
-[![Prototipo 12]
-
-### Tela de inscrição em torneio
-
-[![Prototipo 13]
-
-<p align = "justify">
-Na primeira versão do protótipo utilizamos a ferramenta <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0">Material Design Color Tool</a>  para auxiliar na criação da paleta de cores do aplicativo, definimos as cores base do aplicativo mas as cores definidas para as telas 12 e 13 ainda não foram decididas.
-</p>
 
 ### Versão 2.0
 

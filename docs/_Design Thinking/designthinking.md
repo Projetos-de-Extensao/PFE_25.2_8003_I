@@ -7,10 +7,9 @@ title: Design Thinking
 
 ### **1. Capa**
 
-- Título do Projeto
-- Nome da Equipe
-- Data
-- Logo da Empresa/Organização (se aplicável)
+- Título do Projeto: Projetify 
+- Nome da Equipe: Equipe X
+
 
 ---
 
