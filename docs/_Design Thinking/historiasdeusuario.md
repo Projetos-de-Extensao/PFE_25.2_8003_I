@@ -35,6 +35,39 @@ A criação e o uso de histórias de usuário geralmente seguem esta metodologia
 
 ### História de Usuário
 
-* US001
-* US002
-* US003...
+### 1. Login
+
+- **Como** usuário,  
+- **Quero** acessar o sistema com usuário e senha,  
+- **Para** ter acesso seguro às funcionalidades do sistema.  
+
+---
+
+### 2. Cadastro de Projetos
+
+- **Como** empresa,  
+- **Quero** cadastrar um novo projeto informando título, descrição e requisitos,  
+- **Para** solucionar um problema da organizaçâo
+---
+
+### 3. Validação de Projetos
+
+- **Como** coordernador,  
+- **Quero** aprovar, solicitar ajustes ou reprovar os projetos submetidos,  
+- **Para** garantir que apenas projetos adequados sigam para execução.  
+
+---
+
+### 4. Acompanhamento de Projetos
+
+- **Como** professor,  
+- **Quero** visualizar o andamento das entregas de cada projeto e dar feedback,  
+- **Para** acompanhar a evolução e orientar quando necessário.  
+
+---
+
+### 5. Participação do Aluno
+
+- **Como** aluno participante,  
+- **Quero** visualizar minhas atividades e prazos dentro de cada projeto,  
+- **Para** organizar minhas entregas e enviar o material dentro do prazo.
