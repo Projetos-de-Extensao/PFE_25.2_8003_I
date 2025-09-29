@@ -6,6 +6,7 @@
  **Objetivo:** Criar base do sistema e fluxo inicial.
 
 ###  Backlog
+- [ ] Criar Home (Hall da Fama de Projetos)
 - [ ] Criar tela de Login (usuário/senha)  
 - [ ] Criar formulário de Cadastro de Projeto (Título, Descrição, Requisitos)  
 
@@ -16,8 +17,7 @@
  **Objetivo:** Professores validam projetos e acompanham entregas.
 
 ###  Backlog
-- [ ] Criar tela de Validação (aprovar, solicitar ajustes, reprovar)  
-- [ ] Implementar backend de status do projeto  
+- [ ] Criar tela de Validação (aprovar, solicitar ajustes, reprovar)    
 - [ ] Criar tela de Acompanhamento (listar projetos e entregas)  
 - [ ] Implementar funcionalidade de Feedback  
 ---
