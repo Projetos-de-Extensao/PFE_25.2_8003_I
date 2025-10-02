@@ -1,35 +1,64 @@
 @startmindmap mapamental
-* **Cadastro de Projetos - IBMEC**
-** Usuários
-*** Empresas Externas
+* Sistema de Gerenciamento de Projetos
+** Usuários do Sistema
+*** Empresas externas 
 **** Cadastrar projetos
 **** Acompanhar status
 **** Avaliar resultados
-*** Coordenação
+*** Coordenação 
 **** Aprovar projetos
 **** Gerenciar usuários
 **** Gerar relatórios
-*** Professores
+*** Professores 
 **** Orientar projetos
 **** Avaliar entregas
 **** Interagir com alunos
-*** Alunos
-**** Inscrever-se em projetos
+*** Alunos 
+**** Ser alocado em projetos
 **** Submeter entregas
 **** Acompanhar feedback
-** Funcionalidades
-*** Cadastro/autenticação de usuários
-*** Cadastro e aprovação de projetos
-*** Inscrição de alunos
-*** Atribuição de professores
-*** Upload de documentos
-*** Histórico de projetos
-*** Avaliação dos projetos
-** Requisitos Técnicos
-*** Interface web responsiva
-*** Integração com sistemas IBMEC
-*** Controle de permissões
-*** Logs de atividades
-*** Relatórios customizáveis
+
+** Estrutura / Funcionalidades
+*** Home (sem login) 
+**** Hall da Fama
+**** Como Funciona
+***** Empresa cadastra projeto
+***** Coordenação aprova
+***** Professor gerencia
+***** Aluno executa
+**** Botões: Cadastro / Login
+*** Autenticação 
+**** Cadastro
+***** Selecionar tipo de perfil
+***** Formulário: e-mail/matrícula, nome, senha
+**** Login
+***** Formulário: e-mail/matrícula, senha
+
+** Dashboards
+*** Empresa
+**** Cadastrar novo projeto
+**** Listar projetos com status
+**** Acompanhar andamento
+*** Coordenação
+**** Lista de projetos para análise
+***** Aprovar / Recusar / Solicitar ajustes
+**** Selecionar professor responsável
+**** Lista de projetos em andamento
+*** Professor
+**** Lista de projetos designados
+**** Selecionar alunos participantes
+**** Acompanhar atividades
+**** Dar feedback
+*** Aluno
+**** Projetos designados
+**** Realizar entregas
+**** Acompanhar feedback
+
+** Notificações 
+*** Aprovação de projeto
+*** Professor designado
+*** Aluno alocado
+*** Feedback recebido
 @endmindmap
+
 

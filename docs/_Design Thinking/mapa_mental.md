@@ -19,7 +19,7 @@ Foi levantado um ponto importante sobre o app e, assim, foi produzido o mapa men
  
 ## Versão 1.0
  
-### Mapa mental 1
+
  
 ![Mapa Mental](../assets/mapamental.png)
  
