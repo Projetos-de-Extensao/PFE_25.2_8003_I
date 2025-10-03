@@ -57,28 +57,64 @@ Facilitar a comunicação entre equipes de desenvolvimento, design e stakeholder
 ### 4. Ações Detalhadas
 Para cada tarefa, descreva as ações necessárias:
 
-Tarefa: **Cadastro de Projetos**
+## 1. Cadastro de Usuário (Todas as Personas)
+1. Acessar a página inicial do sistema.  
+2. Selecionar a opção de Cadastro.  
+3. Escolher o tipo de perfil:
+   - Empresa  
+   - Coordenação  
+   - Professor  
+   - Aluno  
+4. Preencher formulário com e-mail/matrícula, nome e senha.  
+5. Submeter cadastro.  
+6. Realizar login com as credenciais cadastradas.  
 
-- Ação 1: Empresa realiza login no sistema.
-- Ação 2: Preenche formulário com título, descrição e requisitos do projeto.
-- Ação 3: Submete para avaliação da coordenação.
+## 2. Cadastro de Projetos (Empresa Externa)
+1. Realizar cadastro e login como empresa.  
+2. Navegar até o dashboard da empresa.  
+3. Selecionar a opção "Cadastrar novo projeto".  
+4. Preencher formulário com:
+   - Título  
+   - Descrição  
+   - Requisitos  
+   - Demais informações do projeto  
+5. Submeter o projeto para avaliação da coordenação.  
+6. Receber notificação sobre o status do projeto:
+   - Pendente  
+   - Aprovado  
+   - Ajustes necessários  
 
-Tarefa: **Validação de Projetos**
+## 3. Validação de Projetos (Coordenação)
+1. Realizar cadastro e login como coordenação.  
+2. Acessar o dashboard da coordenação.  
+3. Visualizar lista de projetos cadastrados pendentes de análise.  
+4. Selecionar um projeto para avaliação.  
+5. Analisar se o projeto atende aos critérios pedagógicos.  
+6. Escolher entre:
+   - Aprovar  
+   - Solicitar ajustes (com comentários)  
+   - Recusar  
+7. Caso aprovado, selecionar o professor responsável pelo projeto.  
+8. Notificar empresa e professor sobre o resultado da avaliação.  
 
-- Ação 1: Coordenação recebe notificação de novo projeto.
-- Ação 2: Analise se o projeto atende aos critérios pedagógicos.
-- Ação 3: Aprova, solicita ajustes ou reprova o projeto.
+## 4. Acompanhamento de Projetos (Professor)
+1. Realizar cadastro e login como professor.  
+2. Acessar o dashboard do professor.  
+3. Visualizar lista de projetos designados.  
+4. Selecionar um projeto para gerenciar.  
+5. Selecionar alunos que irão participar do projeto.  
+6. Acompanhar atividades e entregas dos alunos.  
+7. Dar feedback sobre as entregas e etapas concluídas.  
+8. Registrar avaliações e comentários no sistema.  
 
-Tarefa: **Acompanhamento de Projetos**
+## 5. Participação em Projetos (Aluno)
+1. Realizar cadastro e login como aluno.  
+2. Acessar o dashboard do aluno.  
+3. Visualizar lista de projetos nos quais foi designado.    
+4. Visualizar atividades e requisitos do projeto.  
+5. Executar as atividades atribuídas.  
+6. Submeter entregas pelo sistema.  
+7. Acompanhar feedback e avaliações do professor.
 
-- Ação 1: Professor acessa a lista de projetos em andamento.
-- Ação 2: Monitora entregas dos alunos no sistema.
-- Ação 3: Dá feedback e avalia etapas concluídas.
 
-Tarefa: **Participação em Projetos**
 
-- Ação 1: Aluno acessa a lista de projetos aprovados.
-- Ação 2: Executa atividades atribúidas ao projeto.
-- Ação 3: Submete entregas ao sistema.
-
-### 5. Observações
