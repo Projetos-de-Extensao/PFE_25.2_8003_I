@@ -13,60 +13,32 @@ A construção do protótipo de alta fidelidade auxilia a equipe de desenvolvime
 
 ### Versão 1.0
 
+#### Home
+![Home](../assets/home.png "Home")
 
-![Protótipo de Baixa Fideliade](../assets/prototipo_bf.png "Protótipo de Baixa Fidelidade")
+
+#### Cadastro/Login
+![Autenticação](../assets/autenticacao.png "Autenticação")
+
+
+#### Dashboard Empresa
+![Empresa](../assets/empresa.png "Dashboard_Empresa")
+
+
+#### Dashboard Coordenação
+![Coordenação](../assets/coordenacao.png "Dashboard_Coordenação")
+
+
+#### Dashboard Professor
+![Professor](../assets/professor.png "Dashboard_Professor")
+
+
+#### Dashboard Aluno
+![Aluno](../assets/aluno.png "Dashboard_Aluno")
 
 
 ### Versão 2.0
 
-### Tela Login
-
-[![Prototipo 1]
-
-### Tela Cadastro
-
-[![Prototipo 2]
-
-### Tela Esqueceu Senha
-
-[![Prototipo 3]
-
-### Tela Perfil
-
-[![Prototipo 4]
-
-### Tela do Feed
-
-[![Prototipo 5]
-
-### Tela Cadastrar em um torneio
-
-[![Prototipo 6]
-### Tela Cadastrar torneio
-
-[![Prototipo 7]
-
-### Tela Cadastrar torneio 2
-
-[![Prototipo 8]
-
-### Tela dos meus torneios
-
-[![Prototipo 9]
-
-### Tela das chaves do torneio
-
-[![Prototipo 10]
-
-### Tela das estatíscicas
-
-[![Prototipo 11]
-
-### Tela de adicionar resultado das partidas
-
-[![Prototipo 12]
-
-link para o `<a href="https://www.figma.com/file/karoCnQtvMXWHEwdMuhQs0/Prototipo?node-id=0%3A1">`Protótipo `</a>`
 
 ## Conclusão
 
@@ -82,11 +54,4 @@ A partir da elaboração do protótipo foi possível ter uma noção inicial da 
 
 > Ferramenta Figma. Disponível em https://www.figma.com
 
-## Autor(es)
 
-| Data     | Versão | Descrição                            | Autor(es)                                                                            |
-| -------- | ------- | -------------------------------------- | ------------------------------------------------------------------------------------ |
-| 07/09/20 | 1.0     | Criação do documento                 | Lucas Alexandre e Matheus Estanislau                                                 |
-| 07/09/20 | 1.1     | Adicionado as imagens do protótipo    | Lucas Alexandre e Matheus Estanislau                                                 |
-| 07/09/20 | 1.2     | Adicionado conclusão e referências   | Lucas Alexandre e Matheus Estanislau                                                 |
-| 26/10/20 | 2.0     | Adicionada a versão 2.0 do protótipo | João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan |

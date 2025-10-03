@@ -1,0 +1,19 @@
+@startuml autenticacao
+salt
+{
+  {+
+    Cadastro
+    [Tipo de perfil: Empresa / Coordenação / Professor / Aluno]
+    [E-mail/Matrícula]
+    [Nome]
+    [Senha]
+    [Cadastrar]
+  }
+  {+
+    Login
+    [E-mail/Matrícula]
+    [Senha]
+    [Entrar]
+  }
+}
+@enduml

@@ -1,0 +1,13 @@
+@startuml aluno
+salt
+{
+  {+
+    Dashboard Aluno
+    [Projetos designados]
+    [Visualizar requisitos]
+    [Executar atividades]
+    [Submeter entregas]
+    [Acompanhar feedback]
+  }
+}
+@enduml

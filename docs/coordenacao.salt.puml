@@ -1,0 +1,12 @@
+@startuml coordenacao
+salt
+{
+  {+
+    Dashboard Coordenação
+    [Projetos para análise]
+    [Aprovar / Recusar / Solicitar ajustes]
+    [Selecionar professor responsável]
+    [Projetos em andamento]
+  }
+}
+@enduml

@@ -1,0 +1,20 @@
+@startuml home
+salt
+{
+  {+
+    Hall da Fama
+    [Projetos anteriores]
+  }
+  {+
+    Como Funciona
+    [1. Empresa cadastra projeto]
+    [2. Coordenação aprova]
+    [3. Professor gerencia]
+    [4. Aluno executa]
+  }
+  {+
+    [Cadastrar]
+    [Login]
+  }
+}
+@enduml
