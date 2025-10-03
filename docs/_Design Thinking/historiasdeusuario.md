@@ -35,39 +35,35 @@ A criação e o uso de histórias de usuário geralmente seguem esta metodologia
 
 ### História de Usuário
 
-### 1. Login
-
-- **Como** usuário,  
-- **Quero** acessar o sistema com usuário e senha,  
-- **Para** ter acesso seguro às funcionalidades do sistema.  
-
----
-
-### 2. Cadastro de Projetos
-
-- **Como** empresa,  
-- **Quero** cadastrar um novo projeto informando título, descrição e requisitos,  
-- **Para** solucionar um problema da organizaçâo
----
-
-### 3. Validação de Projetos
-
-- **Como** coordernador,  
-- **Quero** aprovar, solicitar ajustes ou reprovar os projetos submetidos,  
-- **Para** garantir que apenas projetos adequados sigam para execução.  
+## 1. Empresas Externas
+- Como empresa, quero realizar meu cadastro e login no sistema para que eu possa acessar meu dashboard.  
+- Como empresa, quero cadastrar um novo projeto para que a coordenação possa avaliá-lo e aprová-lo.  
+- Como empresa, quero acompanhar o status dos meus projetos para que eu saiba se foram aprovados, recusados ou estão pendentes.    
+- Como empresa, quero avaliar os resultados dos projetos após a conclusão para que eu possa dar feedback à instituição.  
 
 ---
 
-### 4. Acompanhamento de Projetos
-
-- **Como** professor,  
-- **Quero** visualizar o andamento das entregas de cada projeto e dar feedback,  
-- **Para** acompanhar a evolução e orientar quando necessário.  
+## 2. Coordenação
+- Como coordenação, quero realizar meu cadastro e login no sistema para que eu possa acessar o dashboard
+- Como coordenação, quero analisar os projetos submetidos para que apenas os que atendem aos critérios pedagógicos sejam aprovados.  
+- Como coordenação, quero solicitar ajustes em projetos para que eles fiquem alinhados aos requisitos acadêmicos.  
+- Como coordenação, quero recusar projetos inadequados para que eles não sigam para execução.  
+- Como coordenação, quero designar um professor responsável para cada projeto aprovado para que ele possa orientar os alunos corretamente.      
 
 ---
 
-### 5. Participação do Aluno
+## 3. Professores
+- Como professor, quero realizar meu cadastro e login no sistema para que eu possa acessar meus projetos designados.  
+- Como professor, quero visualizar os projetos que me foram atribuídos para que eu saiba quais devo orientar.  
+- Como professor, quero selecionar alunos para participar dos projetos para que a equipe seja formada adequadamente.  
+- Como professor, quero acompanhar as atividades e entregas dos alunos para que eu possa monitorar o progresso do projeto.  
+- Como professor, quero dar feedback sobre entregas e etapas concluídas para que os alunos possam melhorar continuamente.  
 
-- **Como** aluno participante,  
-- **Quero** visualizar minhas atividades e prazos dentro de cada projeto,  
-- **Para** organizar minhas entregas e enviar o material dentro do prazo.
+---
+
+## 4. Alunos
+- Como aluno, quero realizar meu cadastro e login no sistema para que eu possa acessar meus projetos designados.  
+- Como aluno, quero visualizar os projetos nos quais fui designado para que eu saiba em quais atividades estou participando.  
+- Como aluno, quero acessar os requisitos e tarefas do projeto para que eu entenda minhas responsabilidades.  
+- Como aluno, quero submeter entregas pelo sistema para que o professor possa avaliá-las e dar feedback.  
+- Como aluno, quero acompanhar o feedback recebido para que eu possa corrigir e melhorar minhas próximas entregas.
