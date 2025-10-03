@@ -132,34 +132,58 @@ title: Design Thinking
 
 - **Brainstorming**:
 
-    ##### 1. Usuários do Sistema
+    #### 1. Usuários do Sistema
     - **Empresas externas:** cadastrar projetos, acompanhar status, avaliar resultados.
     - **Coordenação:** aprovar projetos, gerenciar usuários, gerar relatórios.
     - **Professores:** orientar projetos, avaliar entregas, interagir com alunos.
-    - **Alunos:** inscrever-se em projetos, submeter entregas, acompanhar feedback.
+    - **Alunos:** ser alocado em projetos, submeter entregas, acompanhar feedback.
 
-    ##### 2. Funcionalidades Principais
-    - Cadastro e autenticação de usuários por perfil.
-    - Cadastro de projetos com campos personalizados (nome, descrição, área, empresa proponente, etc).
-    - Fluxo de aprovação de projetos pela coordenação.
-    - Inscrição de alunos em projetos disponíveis.
-    - Atribuição de professores orientadores.
-    - Espaço para upload de documentos e entregas.
-    - Sistema de notificações (e-mail, painel).
-    - Dashboard com indicadores para cada perfil.
-    - Histórico de projetos realizados.
-    - Avaliação dos projetos por empresas e professores.
+    #### 2. Estrutura/Funcionalidades
+    ### Home (página que pode ser visualizada sem login)
+    - Hall da Fama com projetos anteriores
+    - Seção "Como Funciona":
+        1. Empresa cadastra projeto
+        2. Coordenação aprova
+        3. Professor gerencia
+        4. Aluno executa
+    - Botões para realizar Cadastro e Login de usuários
 
-    ##### 3. Requisitos Técnicos
-    - Interface web responsiva.
-    - Controle de permissões por perfil.
-    - Logs de atividades e auditoria.
-    - Exportação de dados (PDF, Excel).
+    ### Autenticação
+    - Tela de Cadastro:
+    1. Selecionar o tipo de perfil (Empresa, Coordenação, Professor ou Aluno)
+    2. Formulário para preencher e-mail/matrícula, nome e senha
 
-    ##### 4. Outros Pontos
-    - Suporte a anexos de diferentes formatos.
-    - Filtros de busca avançada por área, status, empresa, etc.
-    - Relatórios customizáveis para coordenação.
+    ---
+    - Tela de Login:
+    1. Preencher formulário com e-mail/matrícula e senha.
+
+    ### Empresa Externa
+    - Dashboard com:
+    1. Área para cadastrar novo projeto
+    2. Caso já houver cadastrado um projeto, ele será exibido com seu status (pendente, aprovado,...)
+    3. Poderá acessar seus projetos para acompanhar o andamento
+
+    ### Coordenação
+    - Dashboard com:
+    1. Lista de projetos cadastrados para análise, com opções de aprovar, recusar ou solicitar ajustes com comentários
+    2. Após aprovar, deve selecionar o professor responsável
+    3. Lista com projetos já em andamento
+
+    ### Professor
+    - Dashboard com:
+    1. Lista com os projetos a qual foi designado
+    2. Dentro dos projetos, ele poderá selecionar os alunos que vão participar, acompanhar as atividades e dar feedback
+
+    ### Aluno
+    - Dashboard com:
+    1. Projetos a qual foi designado pelo professor
+    2. Onde dentro da página do projeto, ele poderá realizar as entregas e acompanhar o feedback
+
+    ### Notificações
+    - Aprovação de projeto
+    - Professor designado
+    - Aluno alocado
+    - Feedback recebido
 
 #### **3.4. Prototipagem**
 
