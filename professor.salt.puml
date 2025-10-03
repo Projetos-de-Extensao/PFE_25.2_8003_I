@@ -1,0 +1,12 @@
+@startuml professor
+salt
+{
+  {+
+    Dashboard Professor
+    [Projetos designados]
+    [Selecionar alunos]
+    [Acompanhar atividades]
+    [Dar feedback]
+  }
+}
+@enduml
