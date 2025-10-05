@@ -24,7 +24,7 @@ A construção do protótipo de alta fidelidade auxilia a equipe de desenvolvime
 
 
 #### Dashboard Empresa/Formulário de Projeto
-![Empresa](../assets/empresa.png "Dashboard_Empresa")
+![Empresa](../assets/Empresa.png "Dashboard_Empresa")
 
 ![Form_Projeto](../assets/Formulário_Projeto.png "Formulário_Projeto")
 
