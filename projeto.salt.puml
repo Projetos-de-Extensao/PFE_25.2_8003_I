@@ -1,0 +1,26 @@
+@startuml projeto
+salt
+{
+  {+
+    Projeto X
+    Status: Em andamento
+    Requisitos: 
+    - Requisito 1
+    - Requisito 2
+    - Requisito 3
+  }
+  {+
+    Minhas Entregas
+    [Entrega 1 | [Enviar Arquivo]]
+    [Entrega 2 | [Enviar Arquivo]]
+    [Entrega 3 | [Enviar Arquivo]]
+  }
+  {+
+    Feedback do Professor
+    Último Feedback: "Corrigir a introdução do relatório."
+  }
+  {+
+    [Voltar]
+  }
+}
+@enduml

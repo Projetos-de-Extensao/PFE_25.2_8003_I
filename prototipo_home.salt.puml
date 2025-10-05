@@ -2,19 +2,21 @@
 salt
 {
   {+
-    Hall da Fama
-    [Projetos anteriores]
+    [[Home]                 /              [Cadastro] [Login]]
   }
+
+  {+
+    Hall da Fama (Carrossel)
+    [◀] [Projeto A - Card] [Projeto B - Card] [Projeto C - Card] [▶]
+  }
+
   {+
     Como Funciona
-    [1. Empresa cadastra projeto]
-    [2. Coordenação aprova]
-    [3. Professor gerencia]
-    [4. Aluno executa]
-  }
-  {+
-    [Cadastrar]
-    [Login]
+    1. Empresa cadastra projeto
+    2. Coordenação aprova
+    3. Professor gerencia
+    4. Aluno executa
   }
 }
+
 @enduml

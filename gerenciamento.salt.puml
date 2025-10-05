@@ -1,0 +1,24 @@
+@startuml Gerenciamento_de_Projeto
+salt
+{
+  {+
+    Projeto X
+    Status: Em andamento
+    Alunos Designados: [Selecionar alunos]
+  }
+  {+
+    Atividades
+    [Entrega 1 | [Acompanhar]]
+    [Entrega 2 | [Acompanhar]]
+    [Entrega 3 | [Acompanhar]]
+  }
+  {+
+    Feedback
+    Comentários: [______________________]
+    [Enviar Feedback]
+  }
+  {+
+    [Voltar]
+  }
+}
+@enduml

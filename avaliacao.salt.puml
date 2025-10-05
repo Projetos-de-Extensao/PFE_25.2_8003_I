@@ -1,0 +1,18 @@
+@startuml Avaliação_de_Projeto
+salt
+{
+  {+
+    Projeto A
+    Status: Pendente
+    Descrição: [Lorem ipsum dolor sit amet...]
+    Requisitos: [Requisito 1, Requisito 2...]
+  }
+  {+
+    Professor Responsável: [Selecionar]
+  }
+  {+
+    [Aprovar] [Recusar] [Solicitar ajustes]
+    Comentários: [_______________________]
+  }
+}
+@enduml
