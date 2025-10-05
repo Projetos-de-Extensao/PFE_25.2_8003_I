@@ -1,19 +1,17 @@
-@startuml autenticacao
+@startuml Cadastro de Usuário
 salt
 {
   {+
-    Cadastro
-    [Tipo de perfil: Empresa / Coordenação / Professor / Aluno]
-    [E-mail/Matrícula]
-    [Nome]
-    [Senha]
-    [Cadastrar]
+    Selecione o tipo de perfil:
+    [[Empresa] [Coordenação] [Professor] [Aluno]]
   }
   {+
-    Login
-    [E-mail/Matrícula]
-    [Senha]
-    [Entrar]
+    Formulário
+    E-mail / Matrícula: [_________________]
+    Nome: [_________________]
+    Senha: [_________________]
+    [Submeter]
   }
 }
+
 @enduml

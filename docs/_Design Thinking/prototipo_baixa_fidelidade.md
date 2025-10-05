@@ -18,23 +18,33 @@ A construção do protótipo de alta fidelidade auxilia a equipe de desenvolvime
 
 
 #### Cadastro/Login
-![Autenticação](../assets/autenticacao.png "Autenticação")
+![Cadastro](../assets/cadastro.png "Cadastro")
+
+![Login](../assets/Login.png "Login")
 
 
-#### Dashboard Empresa
+#### Dashboard Empresa/Formulário de Projeto
 ![Empresa](../assets/empresa.png "Dashboard_Empresa")
 
-
-#### Dashboard Coordenação
-![Coordenação](../assets/coordenacao.png "Dashboard_Coordenação")
+![Form_Projeto](../assets/Formulário_Projeto.png "Formulário_Projeto")
 
 
-#### Dashboard Professor
+#### Dashboard Coordenação/Avaliação de Projeto
+![Coordenação](../assets/coordenação.png "Dashboard_Coordenação")
+
+![Avaliação](../assets/Avaliação_de_Projeto.png "Avaliação_de_Projetos")
+
+
+#### Dashboard Professor/Gerenciamento de Projeto
 ![Professor](../assets/professor.png "Dashboard_Professor")
 
+![Gerenciamento](../assets/Gerenciamento_de_Projeto.png "Gerenciamento_de_Projeto")
 
-#### Dashboard Aluno
+
+#### Dashboard Aluno/Projeto Detalhado
 ![Aluno](../assets/aluno.png "Dashboard_Aluno")
+
+![Projeto](../assets/projeto.png "Projeto_Detalhado")
 
 
 ### Versão 2.0

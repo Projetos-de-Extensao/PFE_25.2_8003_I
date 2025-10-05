@@ -1,12 +1,22 @@
-@startuml coordenacao
+@startuml coordenação
 salt
 {
   {+
-    Dashboard Coordenação
-    [Projetos para análise]
-    [Aprovar / Recusar / Solicitar ajustes]
-    [Selecionar professor responsável]
-    [Projetos em andamento]
+    Projetos para Análise
+    [◀] 
+    [Projeto A | Status: Pendente | [Avaliar]] 
+    [Projeto B | Status: Pendente | [Avaliar]] 
+    [Projeto C | Status: Pendente | [Avaliar]] 
+    [▶]
+  }
+
+  {+
+    Projetos em Andamento
+    [◀] 
+    [Projeto X | Prof: João Silva | Em andamento | [Ver Detalhes]] 
+    [Projeto Y | Prof: Maria Souza | Em andamento | [Ver Detalhes]] 
+    [Projeto Z | Prof: Carlos Lima | Em andamento | [Ver Detalhes]] 
+    [▶]
   }
 }
 @enduml

@@ -1,12 +1,14 @@
-@startuml empresa
+@startuml Empresa
 salt
 {
   {+
-    Dashboard Empresa
     [Cadastrar novo projeto]
-    [Projetos cadastrados]
-    [Status: Pendente / Aprovado / Recusado]
-    [Acompanhar andamento]
+  }
+
+  {+
+    Projetos Cadastrados
+    [◀] [Projeto X - Pendente] [Projeto Y - Aprovado] [Projeto Z - Recusado] [▶]
   }
 }
+
 @enduml

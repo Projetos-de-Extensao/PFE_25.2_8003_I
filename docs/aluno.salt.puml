@@ -2,12 +2,12 @@
 salt
 {
   {+
-    Dashboard Aluno
-    [Projetos designados]
-    [Visualizar requisitos]
-    [Executar atividades]
-    [Submeter entregas]
-    [Acompanhar feedback]
+    Projetos Designados
+    [◀] 
+    [Projeto X | Status: Em andamento | [Entrar]] 
+    [Projeto Y | Status: Em andamento | [Entrar]] 
+    [Projeto Z | Status: Em andamento | [Entrar]] 
+    [▶]
   }
 }
 @enduml

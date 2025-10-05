@@ -1,0 +1,12 @@
+@startuml Login
+salt
+{
+  {+
+    Login
+    E-mail / Matrícula: [_________________]
+    Senha: [_________________]
+    [Entrar]
+  }
+}
+
+@enduml

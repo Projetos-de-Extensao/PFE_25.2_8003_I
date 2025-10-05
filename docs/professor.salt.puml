@@ -2,11 +2,12 @@
 salt
 {
   {+
-    Dashboard Professor
-    [Projetos designados]
-    [Selecionar alunos]
-    [Acompanhar atividades]
-    [Dar feedback]
+    Projetos Designados
+    [◀] 
+    [Projeto X | Status: Em andamento | [Gerenciar]] 
+    [Projeto Y | Status: Em andamento | [Gerenciar]] 
+    [Projeto Z | Status: Em andamento | [Gerenciar]] 
+    [▶]
   }
 }
 @enduml
