@@ -89,8 +89,7 @@ label {
   text-align: left;
 }
 
-input,
-select {
+input {
   padding: 0.8rem;
   border-radius: 8px;
   border: 1.5px solid #ccc;
@@ -99,8 +98,7 @@ select {
   transition: border-color 0.3s;
 }
 
-input:focus,
-select:focus {
+input:focus {
   border-color: #00205b;
 }
 
