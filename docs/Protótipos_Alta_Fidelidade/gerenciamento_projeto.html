@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETIFY - Gerenciamento de Projeto</title>
+    <link rel="stylesheet" href="gerenciamento-projeto.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>PROJETIFY</h1>
+            </div>
+            <nav class="main-nav">
+                <a href="home.html">Home</a>
+                <a href="dashboard-professor.html">Dashboard</a>
+                <a href="cadastro.html">Cadastre-se</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+        <!-- Título da Página -->
+        <div class="page-header">
+            <h1>Gerenciamento de Projeto</h1>
+            <p>Gerencie detalhes, alunos e entregas do projeto específico</p>
+        </div>
+
+        <!-- Cabeçalho do Projeto -->
+        <div class="project-header">
+            <h2 class="project-title" id="project-name">Carregando projeto...</h2>
+            <p id="project-description">Carregando descrição do projeto...</p>
+            
+            <div class="project-info">
+                <div class="info-item">
+                    <span class="info-label">Empresa</span>
+                    <span class="info-value" id="project-company">Carregando...</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Data de Início</span>
+                    <span class="info-value" id="project-start-date">Carregando...</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Data de Término</span>
+                    <span class="info-value" id="project-end-date">Carregando...</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Alunos Envolvidos</span>
+                    <span class="info-value" id="project-students">Carregando...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sistema de Abas com CSS puro -->
+        <div class="tabs-system">
+            <input type="radio" name="tabs" id="tab-detalhes" checked>
+            <input type="radio" name="tabs" id="tab-alunos">
+            <input type="radio" name="tabs" id="tab-entregas">
+            <input type="radio" name="tabs" id="tab-avaliacoes">
+            
+            <div class="tabs">
+                <label for="tab-detalhes" class="tab">Detalhes</label>
+                <label for="tab-alunos" class="tab">Alunos</label>
+                <label for="tab-entregas" class="tab">Entregas</label>
+                <label for="tab-avaliacoes" class="tab">Avaliações</label>
+            </div>
+
+            <!-- Conteúdo das Abas -->
+            <div class="tab-content" id="content-detalhes">
+                <div class="section">
+                    <h3 class="section-title">Informações do Projeto</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="projeto-nome">Nome do Projeto</label>
+                            <input type="text" id="projeto-nome" class="table-input" placeholder="Nome do projeto">
+                        </div>
+                        <div class="form-group">
+                            <label for="projeto-empresa">Empresa</label>
+                            <input type="text" id="projeto-empresa" class="table-input" placeholder="Empresa parceira">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projeto-descricao">Descrição</label>
+                        <textarea id="projeto-descricao" class="table-input" placeholder="Descrição detalhada do projeto"></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="projeto-inicio">Data de Início</label>
+                            <input type="date" id="projeto-inicio" class="table-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="projeto-termino">Data de Término</label>
+                            <input type="date" id="projeto-termino" class="table-input">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projeto-alunos">Número de Alunos</label>
+                        <input type="number" id="projeto-alunos" min="0" class="table-input number-input" placeholder="0">
+                    </div>
+                    
+                    <button class="btn btn-primary">Salvar Alterações</button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="content-alunos">
+                <div class="section">
+                    <h3 class="section-title">Alunos Envolvidos</h3>
+                    
+                    <ul class="student-list">
+                        <li class="student-item">
+                            <div class="student-info">
+                                <div class="student-avatar">AM</div>
+                                <div class="student-details">
+                                    <h4>Ana Mendes</h4>
+                                    <p>Engenharia de Software - 5º período</p>
+                                    <p class="student-email">ana.mendes@aluno.ibmec.edu.br</p>
+                                </div>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary btn-small">Avaliar</button>
+                                <button class="btn btn-secondary btn-small">Contatar</button>
+                            </div>
+                        </li>
+                        <li class="student-item">
+                            <div class="student-info">
+                                <div class="student-avatar">BS</div>
+                                <div class="student-details">
+                                    <h4>Bruno Silva</h4>
+                                    <p>Ciência da Computação - 6º período</p>
+                                    <p class="student-email">bruno.silva@aluno.ibmec.edu.br</p>
+                                </div>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary btn-small">Avaliar</button>
+                                <button class="btn btn-secondary btn-small">Contatar</button>
+                            </div>
+                        </li>
+                        <li class="student-item">
+                            <div class="student-info">
+                                <div class="student-avatar">CR</div>
+                                <div class="student-details">
+                                    <h4>Camila Rocha</h4>
+                                    <p>Sistemas de Informação - 5º período</p>
+                                    <p class="student-email">camila.rocha@aluno.ibmec.edu.br</p>
+                                </div>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="btn btn-primary btn-small">Avaliar</button>
+                                <button class="btn btn-secondary btn-small">Contatar</button>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="add-form">
+                        <h3>Adicionar Aluno ao Projeto</h3>
+                        <form class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nome do aluno" class="table-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="E-mail" class="table-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Curso" class="table-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Período" class="table-input">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Adicionar Aluno</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="content-entregas">
+                <div class="section">
+                    <h3 class="section-title">Entregas do Projeto</h3>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Entrega</th>
+                                <th>Data Prevista</th>
+                                <th>Data de Entrega</th>
+                                <th>Status</th>
+                                <th>Avaliação</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" value="Documentação de Requisitos" class="table-input"></td>
+                                <td><input type="date" value="2023-09-15" class="table-input"></td>
+                                <td><input type="date" value="2023-09-12" class="table-input"></td>
+                                <td>
+                                    <select class="status-select">
+                                        <option value="entregue" selected>Entregue</option>
+                                        <option value="pendente">Pendente</option>
+                                        <option value="atrasado">Atrasado</option>
+                                    </select>
+                                </td>
+                                <td><input type="number" value="8.5" min="0" max="10" step="0.1" class="table-input number-input"></td>
+                                <td>
+                                    <button class="btn btn-primary btn-small">Salvar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="Protótipo de Interface" class="table-input"></td>
+                                <td><input type="date" value="2023-09-30" class="table-input"></td>
+                                <td><input type="date" value="2023-09-28" class="table-input"></td>
+                                <td>
+                                    <select class="status-select">
+                                        <option value="entregue" selected>Entregue</option>
+                                        <option value="pendente">Pendente</option>
+                                        <option value="atrasado">Atrasado</option>
+                                    </select>
+                                </td>
+                                <td><input type="number" value="9.0" min="0" max="10" step="0.1" class="table-input number-input"></td>
+                                <td>
+                                    <button class="btn btn-primary btn-small">Salvar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" value="Backend Básico" class="table-input"></td>
+                                <td><input type="date" value="2023-10-15" class="table-input"></td>
+                                <td><input type="date" value="2023-10-18" class="table-input"></td>
+                                <td>
+                                    <select class="status-select">
+                                        <option value="entregue">Entregue</option>
+                                        <option value="pendente">Pendente</option>
+                                        <option value="atrasado" selected>Atrasado</option>
+                                    </select>
+                                </td>
+                                <td><input type="number" value="" min="0" max="10" step="0.1" class="table-input number-input" placeholder="0.0"></td>
+                                <td>
+                                    <button class="btn btn-primary btn-small">Salvar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="add-form">
+                        <h3>Adicionar Nova Entrega</h3>
+                        <form class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Descrição da entrega" class="table-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="table-input">
+                            </div>
+                            <div class="form-group">
+                                <select class="status-select">
+                                    <option value="">Status</option>
+                                    <option value="pendente">Pendente</option>
+                                    <option value="entregue">Entregue</option>
+                                    <option value="atrasado">Atrasado</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Adicionar Entrega</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="content-avaliacoes">
+                <div class="section">
+                    <h3 class="section-title">Avaliações e Feedback</h3>
+                    
+                    <div class="form-group">
+                        <label for="avaliacao-geral">Avaliação Geral do Projeto</label>
+                        <textarea id="avaliacao-geral" placeholder="Digite sua avaliação geral sobre o andamento do projeto..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pontos-fortes">Pontos Fortes</label>
+                        <textarea id="pontos-fortes" placeholder="Quais são os pontos fortes do projeto?"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pontos-melhorar">Pontos a Melhorar</label>
+                        <textarea id="pontos-melhorar" placeholder="Quais aspectos precisam ser melhorados?"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="recomendacoes">Recomendações</label>
+                        <textarea id="recomendacoes" placeholder="Quais são suas recomendações para o projeto?"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="nota-final">Nota Final do Projeto</label>
+                        <input type="number" id="nota-final" min="0" max="10" step="0.1" placeholder="0.0" class="table-input number-input">
+                    </div>
+                    
+                    <button class="btn btn-primary">Salvar Avaliação</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Projetify - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simulação de carregamento de projeto baseado no parâmetro da URL
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simulação de parâmetros de URL - em um projeto real, isso viria da URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const projetoId = urlParams.get('projeto') || '1';
+            
+            // Dados dos projetos (simulação)
+            const projetos = {
+                '1': {
+                    nome: 'Sistema de Gestão Acadêmica',
+                    descricao: 'Desenvolvimento de um sistema completo para gestão acadêmica com módulos para alunos, professores e administração.',
+                    empresa: 'Tech Solutions',
+                    inicio: '01/09/2023',
+                    termino: '15/12/2023',
+                    alunos: '3'
+                },
+                '2': {
+                    nome: 'App de Finanças Pessoais',
+                    descricao: 'Desenvolvimento de um aplicativo mobile para controle de finanças pessoais com relatórios detalhados e metas de economia.',
+                    empresa: 'Banco Digital',
+                    inicio: '01/09/2023',
+                    termino: '15/12/2023',
+                    alunos: '4'
+                },
+                '3': {
+                    nome: 'Plataforma E-commerce',
+                    descricao: 'Criação de uma plataforma de e-commerce completa com sistema de pagamentos e gestão de estoque.',
+                    empresa: 'Varejo Online',
+                    inicio: '01/08/2023',
+                    termino: '30/11/2023',
+                    alunos: '3'
+                },
+                '4': {
+                    nome: 'Sistema de Monitoramento IoT',
+                    descricao: 'Desenvolvimento de sistema de monitoramento para dispositivos IoT com dashboard em tempo real.',
+                    empresa: 'Indústria 4.0',
+                    inicio: '15/08/2023',
+                    termino: '20/12/2023',
+                    alunos: '2'
+                }
+            };
+
+            const projeto = projetos[projetoId] || projetos['1'];
+            
+            // Atualizar a interface com os dados do projeto
+            document.getElementById('project-name').textContent = projeto.nome;
+            document.getElementById('project-description').textContent = projeto.descricao;
+            document.getElementById('project-company').textContent = projeto.empresa;
+            document.getElementById('project-start-date').textContent = projeto.inicio;
+            document.getElementById('project-end-date').textContent = projeto.termino;
+            document.getElementById('project-students').textContent = projeto.alunos;
+            
+            // Preencher os formulários
+            document.getElementById('projeto-nome').value = projeto.nome;
+            document.getElementById('projeto-empresa').value = projeto.empresa;
+            document.getElementById('projeto-descricao').value = projeto.descricao;
+            document.getElementById('projeto-alunos').value = projeto.alunos;
+        });
+    </script>
+</body>
+</html>

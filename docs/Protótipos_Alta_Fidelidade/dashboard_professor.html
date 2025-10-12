@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETIFY - Dashboard Professor</title>
+    <link rel="stylesheet" href="dashboard-professor.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>PROJETIFY</h1>
+            </div>
+            <nav class="main-nav">
+                <a href="home.html">Home</a>
+                <a href="#" class="active">Dashboard</a>
+                <a href="cadastro.html">Cadastre-se</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+        <!-- Título da Página -->
+        <div class="page-header">
+            <h1>Dashboard Professor</h1>
+            <p>Gerencie seus projetos e acompanhe o progresso dos alunos</p>
+        </div>
+
+        <!-- Cards de Estatísticas -->
+        <div class="stats-cards">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Projetos Ativos</div>
+                    <div class="card-icon bg-azul">📂</div>
+                </div>
+                <div class="card-value">
+                    <form class="inline-form">
+                        <input type="number" value="12" min="0" class="editable-number">
+                    </form>
+                </div>
+                <div class="card-description">
+                    <form class="inline-form">
+                        <input type="text" value="+2 em relação ao mês anterior" class="editable-text">
+                    </form>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Alunos Orientados</div>
+                    <div class="card-icon bg-amarelo">👥</div>
+                </div>
+                <div class="card-value">
+                    <form class="inline-form">
+                        <input type="number" value="36" min="0" class="editable-number">
+                    </form>
+                </div>
+                <div class="card-description">
+                    <form class="inline-form">
+                        <input type="text" value="Distribuídos em 12 projetos" class="editable-text">
+                    </form>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Avaliações Pendentes</div>
+                    <div class="card-icon bg-azul">📝</div>
+                </div>
+                <div class="card-value">
+                    <form class="inline-form">
+                        <input type="number" value="5" min="0" class="editable-number">
+                    </form>
+                </div>
+                <div class="card-description">
+                    <form class="inline-form">
+                        <input type="text" value="Precisam de sua atenção" class="editable-text">
+                    </form>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Empresas Parceiras</div>
+                    <div class="card-icon bg-amarelo">🏢</div>
+                </div>
+                <div class="card-value">
+                    <form class="inline-form">
+                        <input type="number" value="8" min="0" class="editable-number">
+                    </form>
+                </div>
+                <div class="card-description">
+                    <form class="inline-form">
+                        <input type="text" value="Colaborando com projetos" class="editable-text">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Projetos Recentes -->
+        <div class="section">
+            <div class="section-header">
+                <h2 class="section-title">Projetos Recentes</h2>
+                <a href="#" class="btn btn-primary">Ver Todos</a>
+            </div>
+            <form class="table-form">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Projeto</th>
+                            <th>Empresa</th>
+                            <th>Alunos</th>
+                            <th>Última Atualização</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" value="Sistema de Gestão Acadêmica" class="table-input"></td>
+                            <td><input type="text" value="Tech Solutions" class="table-input"></td>
+                            <td><input type="number" value="3" min="0" class="table-input number-input"></td>
+                            <td><input type="date" value="2023-10-15" class="table-input"></td>
+                            <td>
+                                <a href="gerenciamento-projeto.html?projeto=1" class="btn btn-primary btn-small">Gerenciar</a>
+                                <button type="submit" class="btn btn-secondary btn-small">Salvar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="App de Finanças Pessoais" class="table-input"></td>
+                            <td><input type="text" value="Banco Digital" class="table-input"></td>
+                            <td><input type="number" value="4" min="0" class="table-input number-input"></td>
+                            <td><input type="date" value="2023-10-12" class="table-input"></td>
+                            <td>
+                                <a href="gerenciamento-projeto.html?projeto=2" class="btn btn-primary btn-small">Gerenciar</a>
+                                <button type="submit" class="btn btn-secondary btn-small">Salvar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="Plataforma E-commerce" class="table-input"></td>
+                            <td><input type="text" value="Varejo Online" class="table-input"></td>
+                            <td><input type="number" value="3" min="0" class="table-input number-input"></td>
+                            <td><input type="date" value="2023-10-10" class="table-input"></td>
+                            <td>
+                                <a href="gerenciamento-projeto.html?projeto=3" class="btn btn-primary btn-small">Gerenciar</a>
+                                <button type="submit" class="btn btn-secondary btn-small">Salvar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="Sistema de Monitoramento IoT" class="table-input"></td>
+                            <td><input type="text" value="Indústria 4.0" class="table-input"></td>
+                            <td><input type="number" value="2" min="0" class="table-input number-input"></td>
+                            <td><input type="date" value="2023-10-08" class="table-input"></td>
+                            <td>
+                                <a href="gerenciamento-projeto.html?projeto=4" class="btn btn-primary btn-small">Gerenciar</a>
+                                <button type="submit" class="btn btn-secondary btn-small">Salvar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+        <!-- Seção de Tarefas Pendentes -->
+        <div class="section">
+            <div class="section-header">
+                <h2 class="section-title">Tarefas Pendentes</h2>
+                <button type="submit" form="tarefas-form" class="btn btn-secondary">Marcar Todas como Concluídas</button>
+            </div>
+            <form id="tarefas-form" class="table-form">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tarefa</th>
+                            <th>Projeto</th>
+                            <th>Prazo</th>
+                            <th>Prioridade</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" value="Avaliar documentação" class="table-input"></td>
+                            <td><input type="text" value="App de Finanças Pessoais" class="table-input"></td>
+                            <td><input type="date" value="2023-10-20" class="table-input"></td>
+                            <td>
+                                <select class="priority-select">
+                                    <option value="alta" selected>Alta</option>
+                                    <option value="media">Média</option>
+                                    <option value="baixa">Baixa</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="status-select">
+                                    <option value="pendente" selected>Pendente</option>
+                                    <option value="concluida">Concluída</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="submit" class="btn btn-primary btn-small">Salvar</button>
+                                <button type="button" class="btn btn-danger btn-small">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="Revisar código" class="table-input"></td>
+                            <td><input type="text" value="Sistema de Gestão Acadêmica" class="table-input"></td>
+                            <td><input type="date" value="2023-10-22" class="table-input"></td>
+                            <td>
+                                <select class="priority-select">
+                                    <option value="alta">Alta</option>
+                                    <option value="media" selected>Média</option>
+                                    <option value="baixa">Baixa</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="status-select">
+                                    <option value="pendente" selected>Pendente</option>
+                                    <option value="concluida">Concluída</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="submit" class="btn btn-primary btn-small">Salvar</button>
+                                <button type="button" class="btn btn-danger btn-small">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            
+            <!-- Formulário para adicionar nova tarefa -->
+            <div class="add-task-form">
+                <h3>Adicionar Nova Tarefa</h3>
+                <form class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="Descrição da tarefa" class="table-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Projeto" class="table-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="table-input">
+                    </div>
+                    <div class="form-group">
+                        <select class="priority-select">
+                            <option value="">Prioridade</option>
+                            <option value="alta">Alta</option>
+                            <option value="media">Média</option>
+                            <option value="baixa">Baixa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Adicionar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Projetify - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
