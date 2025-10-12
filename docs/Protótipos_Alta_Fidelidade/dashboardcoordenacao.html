@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Projetify</title>
+    <link rel="stylesheet" href="dashboardco_style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Projetify</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="dashboardcoordenacao.html">Dashboard</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="dashboard-overview">
+        <h2>Dashboard da Coordenação</h2>
+        <div class="overview-cards">
+          <div class="overview-card">
+            <h3>Projetos Pendentes</h3>
+            <p>5</p>
+          </div>
+          <div class="overview-card">
+            <h3>Projetos em Andamento</h3>
+            <p>12</p>
+          </div>
+          <div class="overview-card">
+            <h3>Professores Ativos</h3>
+            <p>8</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-analysis">
+        <h3>Análise de Projetos Pendentes</h3>
+        <div class="project-list">
+          <div class="project-item">
+            <div class="project-details">
+              <h4>Desenvolvimento de App de Telemedicina</h4>
+              <p><strong>Empresa:</strong> Saúde Digital Ltda.</p>
+              <p><strong>Descrição:</strong> Criação de um aplicativo móvel para agendamento e realização de consultas médicas online, com foco em segurança de dados e usabilidade.</p>
+            </div>
+            <!-- NOVO CAMPO DE COMENTÁRIO INTERNO -->
+            <div class="internal-comment-section">
+              <label for="comment-telemedicina">Comentário Interno:</label>
+              <textarea id="comment-telemedicina" class="internal-comment" placeholder="Adicionar observações sobre o projeto"></textarea>
+            </div>
+            <!-- FIM DO CAMPO DE COMENTÁRIO INTERNO -->
+            <div class="project-actions">
+              <select class="professor-select">
+                <option value="">Selecionar Professor</option>
+                <option value="prof_ana">Prof. Ana Silva</option>
+                <option value="prof_carlos">Prof. Carlos Mendes</option>
+                <option value="prof_maria">Prof. Maria Costa</option>
+                <option value="prof_joao">Prof. João Oliveira</option>
+              </select>
+              <button class="btn-approve">Aprovar</button>
+              <button class="btn-reject">Recusar</button>
+              <button class="btn-adjust">Solicitar Ajustes</button>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-details">
+              <h4>Plataforma de Gerenciamento de Resíduos</h4>
+              <p><strong>Empresa:</strong> EcoTech Soluções Ambientais</p>
+              <p><strong>Descrição:</strong> Desenvolvimento de sistema web para rastreamento e gestão de resíduos industriais, otimizando rotas de coleta e relatórios de conformidade.</p>
+            </div>
+            <!-- NOVO CAMPO DE COMENTÁRIO INTERNO -->
+            <div class="internal-comment-section">
+              <label for="comment-residuos">Comentário Interno:</label>
+              <textarea id="comment-residuos" class="internal-comment" placeholder="Adicionar observações sobre o projeto"></textarea>
+            </div>
+            <!-- FIM DO CAMPO DE COMENTÁRIO INTERNO -->
+            <div class="project-actions">
+              <select class="professor-select">
+                <option value="">Selecionar Professor</option>
+                <option value="prof_ana">Prof. Ana Silva</option>
+                <option value="prof_carlos">Prof. Carlos Mendes</option>
+                <option value="prof_maria">Prof. Maria Costa</option>
+                <option value="prof_joao">Prof. João Oliveira</option>
+              </select>
+              <button class="btn-approve">Aprovar</button>
+              <button class="btn-reject">Recusar</button>
+              <button class="btn-adjust">Solicitar Ajustes</button>
+            </div>
+          </div>
+          <!-- Adicionar mais projetos pendentes aqui -->
+        </div>
+      </section>
+
+      <section class="projects-in-progress">
+        <h3>Projetos em Andamento</h3>
+        <div class="project-list">
+          <div class="project-item in-progress">
+            <div class="project-details">
+              <h4>Sistema de Controle de Qualidade Agrícola</h4>
+              <p><strong>Empresa:</strong> Campo Saudável Agro</p>
+              <p><strong>Professor:</strong> Prof. Ana Silva</p>
+              <p><strong>Status:</strong> Em Desenvolvimento (70% concluído)</p>
+            </div>
+            <div class="project-actions">
+              <button class="btn-view-details">Ver Detalhes</button>
+              <button class="btn-complete">Concluir Projeto</button>
+            </div>
+          </div>
+
+          <div class="project-item in-progress">
+            <div class="project-details">
+              <h4>Website Institucional para ONG</h4>
+              <p><strong>Empresa:</strong> Mãos Solidárias ONG</p>
+              <p><strong>Professor:</strong> Prof. Carlos Mendes</p>
+              <p><strong>Status:</strong> Testes Finais (90% concluído)</p>
+            </div>
+            <div class="project-actions">
+              <button class="btn-view-details">Ver Detalhes</button>
+              <button class="btn-complete">Concluir Projeto</button>
+            </div>
+          </div>
+          <!-- Adicionar mais projetos em andamento aqui -->
+        </div>
+      </section>
+
+      <section class="dashboard-actions">
+        <h3>Ações Administrativas</h3>
+        <div class="action-buttons">
+          <button class="btn-action">Gerenciar Usuários</button>
+          <button class="btn-action">Gerar Relatórios</button>
+          <button class="btn-action">Cadastrar Professor</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Projetify - Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
+
+
+
+
