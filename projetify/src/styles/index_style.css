@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #00205b;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #00205b;
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffb81c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #ffb81c;
+}
+
+.hall-fama {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+
+.hall-fama h2 {
+  font-size: 1.8rem;
+  color: #00205b;
+  margin-bottom: 1.5rem;
+}
+
+.carrossel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.card {
+  flex: 0 0 250px;
+  background-color: #e8ebf4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  color: #00205b;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+}
+
+.como-funciona {
+  background-color: #f5f7fa;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.como-funciona h2 {
+  color: #00205b;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center; /* Adicionado para centralizar na vertical */
+}
+
+.step {
+  background-color: #ffffff;
+  border: 2px solid #ffb81c;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 220px; /* Definindo um max-width para os steps */
+}
+
+.step span {
+  display: block;
+  font-size: 2rem;
+  color: #00205b;
+  margin-bottom: 0.5rem;
+}
+
+.step p {
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #00205b;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  color: #ffb81c;
+}
+
+/* Media queries para telas maiores */
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .steps {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .step {
+    transition: transform 0.2s ease;
+  }
+
+  .step:hover {
+    transform: translateY(-5px);
+  }
+}

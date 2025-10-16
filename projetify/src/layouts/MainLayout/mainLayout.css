@@ -1,0 +1,16 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout-main-content {
+  flex: 1;
+}
+
+.layout-main-content-centered {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
