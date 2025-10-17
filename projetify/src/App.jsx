@@ -6,6 +6,8 @@ import LoginPage from "./pages/Login/LoginPage";
 import CadastroProjetoPage from './pages/CadastroProjeto/CadastroProjetoPage';
 import DashboardEmpresaPage from './pages/DashboardEmpresa/DashboardEmpresaPage';
 import DashboardCoordenacaoPage from './pages/DashboardCoordenacao/DashboardCoordenacaoPage';
+import DashboardProfessorPage from "./pages/DashboardProfessor/DashboardProfessorPage";
+import GerenciamentoProjetoPage from "./pages/GerenciamentoProjeto/GerenciamentoProjetoPage";
 // ... e assim por diante para todas as suas páginas
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
   // return <LoginPage />;
   // return <CadastroProjetoPage />;
   // return <DashboardEmpresaPage />;
-   return <DashboardCoordenacaoPage />;
+  // return <DashboardCoordenacaoPage />;
+  //return <DashboardProfessorPage />;
+  return <GerenciamentoProjetoPage />;
 }
 
 export default App;
