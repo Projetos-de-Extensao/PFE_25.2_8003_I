@@ -5,6 +5,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.dashboard-coordenacao-container {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+}
 
 body {
   background-color: #ffffff;

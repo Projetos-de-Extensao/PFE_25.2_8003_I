@@ -5,6 +5,7 @@ import CadastroPage from "./pages/Cadastro/CadastroPage";
 import LoginPage from "./pages/Login/LoginPage";
 import CadastroProjetoPage from './pages/CadastroProjeto/CadastroProjetoPage';
 import DashboardEmpresaPage from './pages/DashboardEmpresa/DashboardEmpresaPage';
+import DashboardCoordenacaoPage from './pages/DashboardCoordenacao/DashboardCoordenacaoPage';
 // ... e assim por diante para todas as suas páginas
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
   // return <CadastroPage />;
   // return <LoginPage />;
   // return <CadastroProjetoPage />;
-  return <DashboardEmpresaPage />;
+  // return <DashboardEmpresaPage />;
+   return <DashboardCoordenacaoPage />;
 }
 
 export default App;
