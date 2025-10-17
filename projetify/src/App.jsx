@@ -3,14 +3,16 @@ import React from "react";
 import HomePage from "./pages/Home/HomePage";
 import CadastroPage from "./pages/Cadastro/CadastroPage";
 import LoginPage from "./pages/Login/LoginPage";
-// import DashboardPage from './pages/Dashboard/DashboardPage';
+import CadastroProjetoPage from './pages/CadastroProjeto/CadastroProjetoPage';
+import DashboardEmpresaPage from './pages/DashboardEmpresa/DashboardEmpresaPage';
 // ... e assim por diante para todas as suas páginas
 
 function App() {
-  return <HomePage />;
+  // return <HomePage />;
   // return <CadastroPage />;
   // return <LoginPage />;
-  // return <DashboardPage />;
+  // return <CadastroProjetoPage />;
+  return <DashboardEmpresaPage />;
 }
 
 export default App;
