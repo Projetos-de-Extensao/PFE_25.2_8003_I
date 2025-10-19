@@ -8,6 +8,8 @@ import DashboardEmpresaPage from './pages/DashboardEmpresa/DashboardEmpresaPage'
 import DashboardCoordenacaoPage from './pages/DashboardCoordenacao/DashboardCoordenacaoPage';
 import DashboardProfessorPage from "./pages/DashboardProfessor/DashboardProfessorPage";
 import GerenciamentoProjetoPage from "./pages/GerenciamentoProjeto/GerenciamentoProjetoPage";
+import DashboardAlunoPage from "./pages/DashboardAluno/DashboardAlunoPage";
+import ProjetoPage from "./pages/Projeto/ProjetoPage";
 // ... e assim por diante para todas as suas páginas
 
 function App() {
@@ -18,7 +20,9 @@ function App() {
   // return <DashboardEmpresaPage />;
   // return <DashboardCoordenacaoPage />;
   //return <DashboardProfessorPage />;
-  return <GerenciamentoProjetoPage />;
+  //return <GerenciamentoProjetoPage />; 
+  //return <DashboardAlunoPage/>;
+   return <ProjetoPage/>;
 }
 
 export default App;
