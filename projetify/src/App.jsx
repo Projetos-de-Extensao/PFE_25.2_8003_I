@@ -1,7 +1,7 @@
 import React from "react";
 
 import HomePage from "./pages/Home/HomePage";
-import CadastroPage from "./pages/Cadastro/CadastroPage";
+import CadastroUsuarioPage from "./pages/CadastroUsuario/CadastroUsuarioPage";
 import LoginPage from "./pages/Login/LoginPage";
 import CadastroProjetoPage from "./pages/CadastroProjeto/CadastroProjetoPage";
 import DashboardEmpresaPage from "./pages/DashboardEmpresa/DashboardEmpresaPage";
@@ -12,8 +12,8 @@ import DashboardAlunoPage from "./pages/DashboardAluno/DashboardAlunoPage";
 import ProjetoPage from "./pages/Projeto/ProjetoPage";
 
 function App() {
-  return <HomePage />;
-  // return <CadastroPage />;
+  // return <HomePage />;
+  return <CadastroUsuarioPage />;
   // return <LoginPage />;
   // return <CadastroProjetoPage />;
   // return <DashboardEmpresaPage />;
