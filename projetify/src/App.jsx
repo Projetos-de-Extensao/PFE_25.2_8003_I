@@ -12,8 +12,8 @@ import DashboardAlunoPage from "./pages/DashboardAluno/DashboardAlunoPage";
 import ProjetoPage from "./pages/Projeto/ProjetoPage";
 
 function App() {
-  // return <HomePage />;
-  return <CadastroUsuarioPage />;
+  return <HomePage />;
+  // return <CadastroUsuarioPage />;
   // return <LoginPage />;
   // return <CadastroProjetoPage />;
   // return <DashboardEmpresaPage />;

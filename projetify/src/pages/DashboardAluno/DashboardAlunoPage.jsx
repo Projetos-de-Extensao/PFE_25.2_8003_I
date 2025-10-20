@@ -66,18 +66,6 @@ function DashboardAlunoPage() {
             </div>
           </div>
         </section>
-
-        <section className="atualizacoes">
-          <h3>Enviar Atualização</h3>
-          <form id="formAtualizacao" onSubmit={handleSubmit}>
-            <textarea
-              id="mensagem"
-              placeholder="Escreva aqui o progresso ou observações do seu projeto..."
-              required
-            ></textarea>
-            <button type="submit" className="btn-enviar">Enviar</button>
-          </form>
-        </section>
       </div>
     </MainLayout>
   );
