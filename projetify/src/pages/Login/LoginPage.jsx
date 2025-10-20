@@ -1,6 +1,6 @@
 import React from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
-import "../../styles/login_style.css";
+import "../../styles/login.css";
 
 function LoginPage() {
   return (

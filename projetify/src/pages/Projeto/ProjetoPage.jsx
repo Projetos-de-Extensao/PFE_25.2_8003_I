@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import MainLayout from '../../layouts/MainLayout/MainLayout';
-import '../../styles/projeto_style.css';
+import React, { useState } from "react";
+import MainLayout from "../../layouts/MainLayout/MainLayout";
+import "../../styles/projeto.css";
 
 function ProjetoPage() {
   const [feedbacks, setFeedbacks] = useState([
-    { author: 'Prof. Carlos', text: 'Excelente trabalho até aqui! 👏' }
+    { author: "Prof. Carlos", text: "Excelente trabalho até aqui! 👏" },
   ]);
-  const [novoComentario, setNovoComentario] = useState('');
+  const [novoComentario, setNovoComentario] = useState("");
 
   const handleFeedbackSubmit = (event) => {
     event.preventDefault();
-    if (novoComentario.trim() !== '') {
-      setFeedbacks([...feedbacks, { author: 'Você', text: novoComentario }]);
-      setNovoComentario('');
+    if (novoComentario.trim() !== "") {
+      setFeedbacks([...feedbacks, { author: "Você", text: novoComentario }]);
+      setNovoComentario("");
     }
   };
 
@@ -20,12 +20,16 @@ function ProjetoPage() {
     <MainLayout>
       <section className="detalhes-projeto">
         <h2 id="tituloProjeto">Projeto Integrador - App Sustentável</h2>
-        <p><strong>Orientador:</strong> Prof. Carlos Souza</p>
-        <p><strong>Status:</strong> Em andamento</p>
+        <p>
+          <strong>Orientador:</strong> Prof. Carlos Souza
+        </p>
+        <p>
+          <strong>Status:</strong> Em andamento
+        </p>
 
         <div className="progresso">
           <div className="barra">
-            <div className="preenchimento" style={{ width: '70%' }}></div>
+            <div className="preenchimento" style={{ width: "70%" }}></div>
           </div>
           <span>70% concluído</span>
         </div>
@@ -36,9 +40,9 @@ function ProjetoPage() {
             O “App Sustentável” é um aplicativo voltado para incentivar hábitos
             ecológicos no cotidiano. Ele permite que o usuário registre suas
             ações sustentáveis e acompanhe o impacto positivo gerado.
-            <br /><br />
-            O projeto utiliza geolocalização e notificações inteligentes para
-            sugerir pontos de coleta e práticas sustentáveis próximas ao
+            <br />
+            <br />O projeto utiliza geolocalização e notificações inteligentes
+            para sugerir pontos de coleta e práticas sustentáveis próximas ao
             usuário.
           </p>
         </div>
@@ -56,7 +60,9 @@ function ProjetoPage() {
           <h3>Feedback e Comentários</h3>
           <div id="listaFeedback">
             {feedbacks.map((fb, index) => (
-              <p key={index}><strong>{fb.author}:</strong> {fb.text}</p>
+              <p key={index}>
+                <strong>{fb.author}:</strong> {fb.text}
+              </p>
             ))}
           </div>
 
@@ -68,13 +74,13 @@ function ProjetoPage() {
               onChange={(e) => setNovoComentario(e.target.value)}
               required
             ></textarea>
-            <button type="submit" className="btn-enviar">Enviar</button>
+            <button type="submit" className="btn-enviar">
+              Enviar
+            </button>
           </form>
         </div>
 
-        <button className="btn-voltar">
-          ← Voltar ao Dashboard
-        </button>
+        <button className="btn-voltar">← Voltar ao Dashboard</button>
       </section>
     </MainLayout>
   );

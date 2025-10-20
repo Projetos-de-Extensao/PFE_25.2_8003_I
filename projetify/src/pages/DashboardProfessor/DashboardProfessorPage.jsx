@@ -1,6 +1,6 @@
 import React from 'react';
 import MainLayout from '../../layouts/MainLayout/MainLayout';
-import '../../styles/dashboard-professor.css';
+import '../../styles/dashboard_professor.css';
 
 function DashboardProfessorPage() {
   return (

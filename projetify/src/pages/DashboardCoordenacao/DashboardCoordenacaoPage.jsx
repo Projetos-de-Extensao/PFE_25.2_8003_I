@@ -1,6 +1,6 @@
 import React from 'react';
 import MainLayout from '../../layouts/MainLayout/MainLayout';
-import '../../styles/dashboardco_style.css';
+import '../../styles/dashboard_coord.css';
 
 function DashboardCoordenacaoPage() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MainLayout from '../../layouts/MainLayout/MainLayout';
-import '../../styles/dashboard_style.css';
+import '../../styles/dashboard_aluno.css';
 
 function DashboardAlunoPage() {
   const [alunoNome, setAlunoNome] = useState("Aluno");

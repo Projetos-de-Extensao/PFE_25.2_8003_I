@@ -3,26 +3,25 @@ import React from "react";
 import HomePage from "./pages/Home/HomePage";
 import CadastroPage from "./pages/Cadastro/CadastroPage";
 import LoginPage from "./pages/Login/LoginPage";
-import CadastroProjetoPage from './pages/CadastroProjeto/CadastroProjetoPage';
-import DashboardEmpresaPage from './pages/DashboardEmpresa/DashboardEmpresaPage';
-import DashboardCoordenacaoPage from './pages/DashboardCoordenacao/DashboardCoordenacaoPage';
+import CadastroProjetoPage from "./pages/CadastroProjeto/CadastroProjetoPage";
+import DashboardEmpresaPage from "./pages/DashboardEmpresa/DashboardEmpresaPage";
+import DashboardCoordenacaoPage from "./pages/DashboardCoordenacao/DashboardCoordenacaoPage";
 import DashboardProfessorPage from "./pages/DashboardProfessor/DashboardProfessorPage";
 import GerenciamentoProjetoPage from "./pages/GerenciamentoProjeto/GerenciamentoProjetoPage";
 import DashboardAlunoPage from "./pages/DashboardAluno/DashboardAlunoPage";
 import ProjetoPage from "./pages/Projeto/ProjetoPage";
-// ... e assim por diante para todas as suas páginas
 
 function App() {
-  // return <HomePage />;
+  return <HomePage />;
   // return <CadastroPage />;
   // return <LoginPage />;
   // return <CadastroProjetoPage />;
   // return <DashboardEmpresaPage />;
   // return <DashboardCoordenacaoPage />;
-  //return <DashboardProfessorPage />;
-  //return <GerenciamentoProjetoPage />; 
-  //return <DashboardAlunoPage/>;
-   return <ProjetoPage/>;
+  // return <DashboardProfessorPage />;
+  // return <GerenciamentoProjetoPage />;
+  // return <DashboardAlunoPage/>;
+  // return <ProjetoPage/>;
 }
 
 export default App;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MainLayout from '../../layouts/MainLayout/MainLayout';
-import '../../styles/gerenciamento-projeto.css';
+import '../../styles/gerenciamento_projeto.css';
 
 function GerenciamentoProjetoPage() {
   const [activeTab, setActiveTab] = useState('detalhes');

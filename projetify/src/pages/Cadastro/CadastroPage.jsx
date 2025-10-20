@@ -1,6 +1,6 @@
 import React from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
-import "../../styles/cadastro_style.css";
+import "../../styles/cadastro.css";
 
 function CadastroPage() {
   return (

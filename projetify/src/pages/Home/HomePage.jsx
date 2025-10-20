@@ -1,6 +1,6 @@
 import React from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
-import "../../styles/index_style.css";
+import "../../styles/index.css";
 
 function HomePage() {
   return (
