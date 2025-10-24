@@ -1,44 +1,86 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
-// Certifique-se que o nome do ficheiro importado está correto (index_style.css ou index.css)
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "../../styles/index.css";
 
 function HomePage() {
+  const [hallOfFameProjects, setHallOfFameProjects] = useState([]);
+  const [isLoadingHallOfFame, setIsLoadingHallOfFame] = useState(true);
+
+  useEffect(() => {
+    console.log("A buscar projetos do Hall da Fama...");
+    setIsLoadingHallOfFame(true);
+    setTimeout(() => {
+      // Atualize os dados de exemplo para usar a imagem da pasta public/imagens
+      const dadosExemplo = [
+        {
+          id: "x",
+          title: "Projeto X (Concluído)",
+          description:
+            "Implementação de sistema de IA para análise preditiva de vendas.",
+          // Caminho relativo à raiz do servidor (pasta public)
+          image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
+        },
+        {
+          id: "y",
+          title: "Projeto Y (Concluído)",
+          description:
+            "Desenvolvimento de aplicativo mobile multiplataforma para gestão de tarefas.",
+          // Usando a mesma imagem para todos os exemplos
+          image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
+        },
+        {
+          id: "z",
+          title: "Projeto Z (Concluído)",
+          description:
+            "Criação de plataforma web acessível para ONG de inclusão social.",
+          // Usando a mesma imagem para todos os exemplos
+          image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
+        },
+        // Pode adicionar mais projetos se quiser, usando a mesma imagem
+        // {
+        //   id: 'a',
+        //   title: "Projeto Alfa (Concluído)",
+        //   description: "Estudo e prototipagem de solução IoT para monitoramento ambiental.",
+        //   image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+        // },
+      ];
+      setHallOfFameProjects(dadosExemplo);
+      setIsLoadingHallOfFame(false);
+      console.log("Projetos do Hall da Fama carregados.");
+    }, 800);
+  }, []);
+
+  const handleCardClick = (id) => {
+    console.log("Clicou no card do projeto do Hall da Fama:", id);
+  };
+
   return (
-    // Chama MainLayout sem a prop centerContent
     <MainLayout>
       <section className="hall-fama">
         <h2>Hall da Fama de Projetos</h2>
         <div className="carrossel">
-          <div className="card">
-            <img
-              src="/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-              alt="Projeto 1"
-            />
-            <h3>Projeto X</h3>
-            <p>Lorem Ipsum.</p>
-          </div>
-          <div className="card">
-            <img
-              src="/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-              alt="Projeto 2"
-            />
-            <h3>Projeto Y</h3>
-            <p>Lorem Ipsum.</p>
-          </div>
-          <div className="card">
-            <img
-              src="/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-              alt="Projeto 3"
-            />
-            <h3>Projeto Z</h3>
-            <p>Lorem Ipsum.</p>
-          </div>
+          {isLoadingHallOfFame ? (
+            <p>A carregar Hall da Fama...</p>
+          ) : hallOfFameProjects.length > 0 ? (
+            hallOfFameProjects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                image={project.image} // Passa o caminho da imagem
+                onDetailsClick={() => handleCardClick(project.id)}
+                detailsButtonText="Saber Mais"
+              >
+                <p>{project.description}</p>
+              </ProjectCard>
+            ))
+          ) : (
+            <p>Nenhum projeto no Hall da Fama ainda.</p>
+          )}
         </div>
       </section>
 
       <section className="como-funciona">
-        {/* container central que recebe o fundo cinza e limita a largura */}
         <div className="container">
           <h2>Como funciona?</h2>
           <div className="steps">

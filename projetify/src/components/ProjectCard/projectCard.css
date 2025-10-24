@@ -1,0 +1,94 @@
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h4 {
+  color: #00205b;
+  margin-bottom: 0.5rem;
+  font-size: 1.1em;
+}
+
+.card p {
+  color: #333;
+  font-size: 0.9em;
+  margin-bottom: 0.5rem;
+}
+
+.card p strong {
+  color: #00205b;
+}
+
+.progresso {
+  margin: 1rem 0;
+}
+
+.barra {
+  width: 100%;
+  background: #eee;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.preenchimento {
+  height: 100%;
+  background-color: #0056b3;
+  border-radius: 10px;
+}
+
+.progresso span {
+  display: block;
+  text-align: right;
+  font-size: 0.8em;
+  color: #555;
+  margin-top: 4px;
+}
+
+.btn-detalhes {
+  background-color: #00205b;
+  color: #ffb81c;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: auto;
+  font-weight: 600;
+}
+
+.btn-detalhes:hover {
+  background-color: #ffb81c;
+  color: #00205b;
+}
+
+.project-card-image {
+  width: 100%; /* Ocupa a largura total do card */
+  height: 180px; /* Altura fixa para as imagens */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 8px; /* Bordas um pouco arredondadas */
+  margin-bottom: 1rem; /* Espaço abaixo da imagem */
+  display: block; /* Garante que a imagem se comporta como bloco */
+}
+
+/* Você pode querer ajustar o padding do card se a imagem ficar muito colada */
+.card {
+  /* ... (seus estilos existentes) ... */
+  padding: 1.5rem; /* Talvez aumentar para 1.2rem ou 1.5rem se precisar de mais espaço */
+}
+
+/* Se você tinha a classe .card como antes, adicione ou ajuste */
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem; /* Ajuste este valor se a imagem ficar muito colada nas bordas */
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}

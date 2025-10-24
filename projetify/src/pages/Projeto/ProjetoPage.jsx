@@ -50,9 +50,18 @@ function ProjetoPage() {
         <div className="galeria">
           <h3>Imagens do Projeto</h3>
           <div className="imagens-container">
-            <img src="/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png" alt="Tela inicial do app" />
-            <img src="/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png" alt="Tela de impacto ecológico" />
-            <img src="/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png" alt="Mapa de pontos sustentáveis" />
+            <img
+              src="/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+              alt="Tela inicial do app"
+            />
+            <img
+              src="/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+              alt="Tela de impacto ecológico"
+            />
+            <img
+              src="/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+              alt="Mapa de pontos sustentáveis"
+            />
           </div>
         </div>
 
