@@ -20,8 +20,8 @@ function App() {
   // return <DashboardCoordenacaoPage />;
   // return <DashboardProfessorPage />;
   // return <GerenciamentoProjetoPage />;
-  // return <DashboardAlunoPage/>;
-  // return <ProjetoPage/>;
+  // return <DashboardAlunoPage />;
+  // return <ProjetoPage />;
 }
 
 export default App;
