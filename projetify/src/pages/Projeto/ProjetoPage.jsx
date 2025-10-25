@@ -17,7 +17,7 @@ function ProjetoPage() {
   };
 
   return (
-    <MainLayout>
+    <MainLayout isDashboardPage={true}>
       <section className="detalhes-projeto">
         <h2 id="tituloProjeto">Projeto Integrador - App Sustentável</h2>
         <p>

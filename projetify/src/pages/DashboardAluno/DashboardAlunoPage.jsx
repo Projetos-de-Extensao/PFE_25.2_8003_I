@@ -53,7 +53,7 @@ function DashboardAlunoPage() {
   };
 
   return (
-    <MainLayout>
+    <MainLayout isDashboardPage={true}>
       <div className="dashboard-aluno-container">
         <section className="boas-vindas">
           <h2>

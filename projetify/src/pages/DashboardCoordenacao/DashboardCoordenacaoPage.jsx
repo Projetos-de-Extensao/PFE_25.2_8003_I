@@ -4,7 +4,7 @@ import '../../styles/dashboard_coord.css';
 
 function DashboardCoordenacaoPage() {
   return (
-    <MainLayout> {/* Layout padrão, sem centralização */}
+    <MainLayout isDashboardPage={true}> {/* Layout padrão, sem centralização */}
       {/* Container que organiza o conteúdo desta página em uma coluna vertical */}
       <div className="dashboard-coordenacao-container">
 

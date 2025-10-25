@@ -67,7 +67,7 @@ function DashboardEmpresaPage() {
   };
 
   return (
-    <MainLayout>
+    <MainLayout isDashboardPage={true}>
       <div className="dashboard-empresa-container">
         <section className="boas-vindas">
           <h2>

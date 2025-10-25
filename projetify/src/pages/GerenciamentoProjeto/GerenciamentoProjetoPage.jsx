@@ -6,7 +6,7 @@ function GerenciamentoProjetoPage() {
   const [activeTab, setActiveTab] = useState('detalhes');
 
   return (
-    <MainLayout>
+    <MainLayout isDashboardPage={true}>
       <div className="main-content">
         <div className="page-header">
           <h1>Gerenciamento de Projeto</h1>

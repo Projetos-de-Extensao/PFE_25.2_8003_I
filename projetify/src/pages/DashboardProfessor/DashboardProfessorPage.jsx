@@ -4,7 +4,7 @@ import '../../styles/dashboard_professor.css';
 
 function DashboardProfessorPage() {
   return (
-    <MainLayout>
+    <MainLayout isDashboardPage={true}>
       <div className="main-content">
         <div className="page-header">
           <h1>Dashboard Professor</h1>
