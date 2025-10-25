@@ -1,11 +1,12 @@
 import React from "react";
 import "./header.css";
+import Logo from "../Logo/logo";
 
 function Header() {
   return (
     <header>
-      <nav>
-        <h2>Projetify</h2>
+      <nav> 
+        <Logo/>
         <ul>
           <li>
             <a href="#home">Home</a>
