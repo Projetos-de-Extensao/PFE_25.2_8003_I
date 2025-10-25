@@ -1,33 +1,48 @@
-import React from "react";
+import React, { useState } from "react"; // Adicionado useState
 import MainLayout from "../../layouts/MainLayout/MainLayout";
-import "../../styles/login.css";
+import FormInput from "../../components/FormElements/FormInput"; 
+import "../../styles/login.css"; 
 
 function LoginPage() {
+  const [emailMatricula, setEmailMatricula] = useState("");
+  const [senha, setSenha] = useState("");
+
+  const handleSubmit = (event) => {
+      event.preventDefault();
+      console.log("Login com:", emailMatricula, senha);
+     
+      alert('Tentativa de login (ver console)');
+  };
+
   return (
     <MainLayout centerContent={true}>
-      <div className="page-centered-container">
-        <form>
-          <label htmlFor="email_matricula">E-mail/Matrícula</label>
-          <input
-            type="text"
-            id="email_matricula"
-            name="email_matricula"
-            placeholder="Digite seu e-mail ou matrícula"
-            required
-          />
+     
+      <form onSubmit={handleSubmit}>
+       
+       
+        <FormInput
+          label="E-mail/Matrícula"
+          id="email_matricula"
+          type="text"
+          value={emailMatricula}
+          onChange={(e) => setEmailMatricula(e.target.value)}
+          placeholder="Digite seu e-mail ou matrícula"
+          required={true} 
+        />
 
-          <label htmlFor="senha">Senha</label>
-          <input
-            type="password"
-            id="senha"
-            name="senha"
-            placeholder="Digite sua senha"
-            required
-          />
+        <FormInput
+          label="Senha"
+          id="senha"
+          type="password"
+          value={senha}
+          onChange={(e) => setSenha(e.target.value)}
+          placeholder="Digite sua senha"
+          required={true} 
+        />
 
-          <button type="submit">Entrar</button>
-        </form>
-      </div>
+        
+        <button type="submit">Entrar</button>
+      </form>
     </MainLayout>
   );
 }
