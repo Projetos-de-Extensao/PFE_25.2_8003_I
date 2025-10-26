@@ -17,28 +17,24 @@
 .layout-main-content-centered {
   flex: 1;
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: flex-start; /* alinhar ao topo para que o card não fique verticalmente centrado */
+  justify-content: center;
+  align-items: flex-start;
   padding: 3rem 1rem;
   width: 100%;
 }
 
-/* limita a largura do filho direto dentro do main centered,
-   mantendo-o centralizado e com margens brancas laterais */
 .layout-main-content-centered > * {
   width: 100%;
-  max-width: 1100px; /* ajuste conforme necessário (900-1200px) */
+  max-width: 1100px;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-/* se quiser que formulários internos fiquem centralizados em si (opcional) */
 .layout-main-content-centered form,
 .layout-main-content-centered .page-centered-container {
   margin: 0 auto;
 }
 
-/* garante que cada section ocupe 100% da largura do main */
 .layout-main-content > section,
 .layout-main-content-centered > section {
   width: 100%;

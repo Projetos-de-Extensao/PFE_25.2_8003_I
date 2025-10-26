@@ -136,7 +136,7 @@ main {
 
 /* Botão */
 .btn-detalhes {
-  background-color: #00d4ff;
+  background-color: #00205b;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -146,7 +146,7 @@ main {
 }
 
 .btn-detalhes:hover {
-  background-color: #009ecc;
+  background-color: #00205b;
 }
 
 /* Atualizações */

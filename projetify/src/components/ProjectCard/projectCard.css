@@ -6,6 +6,7 @@
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .card h4 {
@@ -51,44 +52,41 @@
 }
 
 .btn-detalhes {
-  background-color: #00205b;
-  color: #ffb81c;
+  background-color: var(--blue, #00205b);
+  color: var(--accent, #ffb81c);
   border: none;
-  padding: 10px 15px;
+  padding: 0.8rem 1.2rem;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-  margin-top: auto;
+  font-size: 1rem;
   font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.12s ease;
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
 }
 
 .btn-detalhes:hover {
-  background-color: #ffb81c;
-  color: #00205b;
+  background-color: #00337f;
+  color: #ffd04b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.btn-detalhes:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 .project-card-image {
-  width: 100%; /* Ocupa a largura total do card */
-  height: 180px; /* Altura fixa para as imagens */
-  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-  border-radius: 8px; /* Bordas um pouco arredondadas */
-  margin-bottom: 1rem; /* Espaço abaixo da imagem */
-  display: block; /* Garante que a imagem se comporta como bloco */
-}
-
-/* Você pode querer ajustar o padding do card se a imagem ficar muito colada */
-.card {
-  /* ... (seus estilos existentes) ... */
-  padding: 1.5rem; /* Talvez aumentar para 1.2rem ou 1.5rem se precisar de mais espaço */
-}
-
-/* Se você tinha a classe .card como antes, adicione ou ajuste */
-.card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem; /* Ajuste este valor se a imagem ficar muito colada nas bordas */
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
+  display: block;
+}
+
+.card {
+  padding: 1.5rem;
 }

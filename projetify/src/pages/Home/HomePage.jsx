@@ -11,14 +11,12 @@ function HomePage() {
     console.log("A buscar projetos do Hall da Fama...");
     setIsLoadingHallOfFame(true);
     setTimeout(() => {
-      // Atualize os dados de exemplo para usar a imagem da pasta public/imagens
       const dadosExemplo = [
         {
           id: "x",
           title: "Projeto X (Concluído)",
           description:
             "Implementação de sistema de IA para análise preditiva de vendas.",
-          // Caminho relativo à raiz do servidor (pasta public)
           image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
         },
         {
@@ -26,7 +24,6 @@ function HomePage() {
           title: "Projeto Y (Concluído)",
           description:
             "Desenvolvimento de aplicativo mobile multiplataforma para gestão de tarefas.",
-          // Usando a mesma imagem para todos os exemplos
           image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
         },
         {
@@ -34,16 +31,8 @@ function HomePage() {
           title: "Projeto Z (Concluído)",
           description:
             "Criação de plataforma web acessível para ONG de inclusão social.",
-          // Usando a mesma imagem para todos os exemplos
           image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
         },
-        // Pode adicionar mais projetos se quiser, usando a mesma imagem
-        // {
-        //   id: 'a',
-        //   title: "Projeto Alfa (Concluído)",
-        //   description: "Estudo e prototipagem de solução IoT para monitoramento ambiental.",
-        //   image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-        // },
       ];
       setHallOfFameProjects(dadosExemplo);
       setIsLoadingHallOfFame(false);
@@ -67,7 +56,7 @@ function HomePage() {
               <ProjectCard
                 key={project.id}
                 title={project.title}
-                image={project.image} // Passa o caminho da imagem
+                image={project.image}
                 onDetailsClick={() => handleCardClick(project.id)}
                 detailsButtonText="Saber Mais"
               >

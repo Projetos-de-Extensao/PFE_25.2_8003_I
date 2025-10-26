@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from "react"; // Import useState e useEffect
+import React, { useState, useEffect } from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
-import ProjectCard from "../../components/ProjectCard/ProjectCard"; // Importe o ProjectCard
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "../../styles/dashboard_empresa.css";
 
 function DashboardEmpresaPage() {
   const empresaNome = localStorage.getItem("empresaNome") || "Empresa";
-  const [projetos, setProjetos] = useState([]); // Estado para guardar os projetos
-  const [isLoading, setIsLoading] = useState(true); // Estado de carregamento
+  const [projetos, setProjetos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simula a busca de dados dos projetos da empresa
     console.log("A buscar projetos da empresa...");
     setIsLoading(true);
     setTimeout(() => {
@@ -55,15 +54,14 @@ function DashboardEmpresaPage() {
           status: "Pendente Aprovação",
         },
       ];
-      setProjetos(dadosExemplo); // Atualiza o estado
+      setProjetos(dadosExemplo);
       setIsLoading(false);
       console.log("Projetos da empresa carregados.");
-    }, 1200); // Simula atraso
+    }, 1200);
   }, []);
 
   const handleVerDetalhes = (id) => {
     console.log("Ver detalhes do projeto:", id);
-    // Lógica de navegação
   };
 
   return (
@@ -81,7 +79,6 @@ function DashboardEmpresaPage() {
 
         <div className="estatisticas">
           <div className="card-estatistica">
-            {/* Calcula dinamicamente baseado no estado */}
             <h3>
               {isLoading
                 ? "..."
@@ -93,7 +90,6 @@ function DashboardEmpresaPage() {
             </h3>
             <p>Projetos Ativos</p>
           </div>
-          {/* Outros cards podem precisar de dados do estado também */}
           <div className="card-estatistica">
             <h3>8</h3>
             <p>Colaboradores</p>
@@ -114,31 +110,25 @@ function DashboardEmpresaPage() {
         </div>
 
         <section className="projetos">
-          {/* Poderia dividir em seções diferentes para Pendentes e Em Andamento/Testes */}
           <h3>Seus Projetos</h3>
           <div className="cards-container">
-            {/* Mostra carregamento ou lista */}
             {isLoading ? (
               <p>A carregar projetos...</p>
             ) : projetos.length > 0 ? (
-              projetos.map(
-                (
-                  projeto // Mapeia a lista do ESTADO 'projetos'
-                ) => (
-                  <ProjectCard
-                    key={projeto.id}
-                    title={projeto.titulo}
-                    responsible={projeto.responsavel}
-                    progress={projeto.progresso}
-                    status={projeto.status} // Passa o status para o card
-                    onDetailsClick={() => handleVerDetalhes(projeto.id)}
-                  >
-                    <p>
-                      <strong>Prazo:</strong> {projeto.prazo}
-                    </p>
-                  </ProjectCard>
-                )
-              )
+              projetos.map((projeto) => (
+                <ProjectCard
+                  key={projeto.id}
+                  title={projeto.titulo}
+                  responsible={projeto.responsavel}
+                  progress={projeto.progresso}
+                  status={projeto.status}
+                  onDetailsClick={() => handleVerDetalhes(projeto.id)}
+                >
+                  <p>
+                    <strong>Prazo:</strong> {projeto.prazo}
+                  </p>
+                </ProjectCard>
+              ))
             ) : (
               <p>Nenhum projeto encontrado.</p>
             )}
@@ -148,7 +138,6 @@ function DashboardEmpresaPage() {
         <section className="equipe">
           <h3>Equipe</h3>
           <div className="equipe-container">
-            {/* Conteúdo da equipe (mantido estático por enquanto) */}
             <div className="membro-equipe">
               <img
                 src="https://randomuser.me/api/portraits/women/32.jpg"

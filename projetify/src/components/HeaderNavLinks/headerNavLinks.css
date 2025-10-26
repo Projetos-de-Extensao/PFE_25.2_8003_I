@@ -1,6 +1,3 @@
-/* src/components/HeaderNavLinks/headerNavLinks.css */
-
-/* Estilo da lista ul (pode copiar/adaptar de header.css) */
 .header-nav-links {
   list-style: none;
   display: flex;
@@ -10,7 +7,6 @@
   align-items: center;
 }
 
-/* Estilo para cada link dentro da lista */
 .header-nav-links li a.nav-link {
   color: #ffffff;
   text-decoration: none;
@@ -24,30 +20,28 @@
   font-family: inherit;
 }
 
-/* Efeito hover */
 .header-nav-links li a.nav-link:hover {
-  color: #ffb81c; /* Cor amarela IBMEC */
+  color: #ffb81c;
 }
 
-/* Estilo específico opcional para Login/Sair */
-.login-link, .logout-link {
- 
-     padding: 0.4rem 0.8rem;
-     border: 1px solid rgba(255, 255, 255, 0.5);
-     border-radius: 4px; 
+.login-link,
+.logout-link {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
 }
 
-.login-link:hover, .logout-link:hover {
-    color: #ffd04b; /* Amarelo um pouco mais claro */
+.login-link:hover,
+.logout-link:hover {
+  color: #ffd04b;
 }
 
-/* Responsividade (copiar/adaptar de header.css se necessário) */
 @media (max-width: 767px) {
-    .header-nav-links {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem 1.5rem;
-        width: 100%;
-        margin-top: 1rem;
-    }
+  .header-nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
 }

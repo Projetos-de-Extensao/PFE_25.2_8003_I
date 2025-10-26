@@ -1,25 +1,25 @@
-import React from 'react';
-import MainLayout from '../../layouts/MainLayout/MainLayout';
-import '../../styles/cadastro_projeto.css';
+import React from "react";
+import MainLayout from "../../layouts/MainLayout/MainLayout";
+import "../../styles/cadastro_projeto.css";
 
 function CadastroProjetoPage() {
   // Simulação de submit para o formulário
   const handleSubmit = (event) => {
     event.preventDefault();
-    const dataInicio = new Date(document.getElementById('data_inicio').value);
-    const dataTermino = new Date(document.getElementById('data_termino').value);
-    
+    const dataInicio = new Date(document.getElementById("data_inicio").value);
+    const dataTermino = new Date(document.getElementById("data_termino").value);
+
     if (dataTermino < dataInicio) {
-      alert('A data de término não pode ser anterior à data de início!');
+      alert("A data de término não pode ser anterior à data de início!");
       return;
     }
-    
-    alert('Projeto cadastrado com sucesso!');
+
+    alert("Projeto cadastrado com sucesso!");
     event.target.reset();
   };
 
   return (
-    <MainLayout centerContent={true}>
+    <MainLayout centerContent={true} isDashboardPage={true}>
       <form id="formCadastroProjeto" onSubmit={handleSubmit}>
         <div className="form-header">
           <h2>Cadastrar Novo Projeto</h2>
@@ -28,12 +28,23 @@ function CadastroProjetoPage() {
 
         <div className="form-group">
           <label htmlFor="titulo">Título do Projeto</label>
-          <input type="text" id="titulo" name="titulo" placeholder="Digite o título do projeto" required />
+          <input
+            type="text"
+            id="titulo"
+            name="titulo"
+            placeholder="Digite o título do projeto"
+            required
+          />
         </div>
 
         <div className="form-group">
           <label htmlFor="descricao">Descrição</label>
-          <textarea id="descricao" name="descricao" placeholder="Descreva o objetivo e escopo do projeto" required></textarea>
+          <textarea
+            id="descricao"
+            name="descricao"
+            placeholder="Descreva o objetivo e escopo do projeto"
+            required
+          ></textarea>
         </div>
 
         <div className="form-row">
@@ -70,8 +81,6 @@ function CadastroProjetoPage() {
             <input type="date" id="data_termino" name="data_termino" required />
           </div>
         </div>
-        
-       
 
         <button type="submit">Cadastrar Projeto</button>
       </form>

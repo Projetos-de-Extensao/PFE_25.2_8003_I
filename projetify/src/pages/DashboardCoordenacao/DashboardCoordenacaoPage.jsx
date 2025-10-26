@@ -1,13 +1,11 @@
-import React from 'react';
-import MainLayout from '../../layouts/MainLayout/MainLayout';
-import '../../styles/dashboard_coord.css';
+import React from "react";
+import MainLayout from "../../layouts/MainLayout/MainLayout";
+import "../../styles/dashboard_coord.css";
 
 function DashboardCoordenacaoPage() {
   return (
-    <MainLayout isDashboardPage={true}> {/* Layout padrão, sem centralização */}
-      {/* Container que organiza o conteúdo desta página em uma coluna vertical */}
+    <MainLayout isDashboardPage={true}>
       <div className="dashboard-coordenacao-container">
-
         <section className="dashboard-overview">
           <h2>Dashboard da Coordenação</h2>
           <div className="overview-cards">
@@ -32,12 +30,24 @@ function DashboardCoordenacaoPage() {
             <div className="project-item">
               <div className="project-details">
                 <h4>Desenvolvimento de App de Telemedicina</h4>
-                <p><strong>Empresa:</strong> Saúde Digital Ltda.</p>
-                <p><strong>Descrição:</strong> Criação de um aplicativo móvel para agendamento e realização de consultas médicas online, com foco em segurança de dados e usabilidade.</p>
+                <p>
+                  <strong>Empresa:</strong> Saúde Digital Ltda.
+                </p>
+                <p>
+                  <strong>Descrição:</strong> Criação de um aplicativo móvel
+                  para agendamento e realização de consultas médicas online, com
+                  foco em segurança de dados e usabilidade.
+                </p>
               </div>
               <div className="internal-comment-section">
-                <label htmlFor="comment-telemedicina">Comentário Interno:</label>
-                <textarea id="comment-telemedicina" className="internal-comment" placeholder="Adicionar observações sobre o projeto"></textarea>
+                <label htmlFor="comment-telemedicina">
+                  Comentário Interno:
+                </label>
+                <textarea
+                  id="comment-telemedicina"
+                  className="internal-comment"
+                  placeholder="Adicionar observações sobre o projeto"
+                ></textarea>
               </div>
               <div className="project-actions">
                 <select className="professor-select">
@@ -56,12 +66,22 @@ function DashboardCoordenacaoPage() {
             <div className="project-item">
               <div className="project-details">
                 <h4>Plataforma de Gerenciamento de Resíduos</h4>
-                <p><strong>Empresa:</strong> EcoTech Soluções Ambientais</p>
-                <p><strong>Descrição:</strong> Desenvolvimento de sistema web para rastreamento e gestão de resíduos industriais, otimizando rotas de coleta e relatórios de conformidade.</p>
+                <p>
+                  <strong>Empresa:</strong> EcoTech Soluções Ambientais
+                </p>
+                <p>
+                  <strong>Descrição:</strong> Desenvolvimento de sistema web
+                  para rastreamento e gestão de resíduos industriais, otimizando
+                  rotas de coleta e relatórios de conformidade.
+                </p>
               </div>
               <div className="internal-comment-section">
                 <label htmlFor="comment-residuos">Comentário Interno:</label>
-                <textarea id="comment-residuos" className="internal-comment" placeholder="Adicionar observações sobre o projeto"></textarea>
+                <textarea
+                  id="comment-residuos"
+                  className="internal-comment"
+                  placeholder="Adicionar observações sobre o projeto"
+                ></textarea>
               </div>
               <div className="project-actions">
                 <select className="professor-select">
@@ -85,9 +105,15 @@ function DashboardCoordenacaoPage() {
             <div className="project-item in-progress">
               <div className="project-details">
                 <h4>Sistema de Controle de Qualidade Agrícola</h4>
-                <p><strong>Empresa:</strong> Campo Saudável Agro</p>
-                <p><strong>Professor:</strong> Prof. Ana Silva</p>
-                <p><strong>Status:</strong> Em Desenvolvimento (70% concluído)</p>
+                <p>
+                  <strong>Empresa:</strong> Campo Saudável Agro
+                </p>
+                <p>
+                  <strong>Professor:</strong> Prof. Ana Silva
+                </p>
+                <p>
+                  <strong>Status:</strong> Em Desenvolvimento (70% concluído)
+                </p>
               </div>
               <div className="project-actions">
                 <button className="btn-view-details">Ver Detalhes</button>
@@ -96,7 +122,6 @@ function DashboardCoordenacaoPage() {
             </div>
           </div>
         </section>
-        
       </div>
     </MainLayout>
   );
