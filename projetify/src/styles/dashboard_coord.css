@@ -1,4 +1,3 @@
-/* Estilos Base - Adaptados do index_style.css */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +6,11 @@
 }
 .dashboard-coordenacao-container {
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem; 
+  gap: 2rem;
 }
 
 body {
@@ -21,7 +20,7 @@ body {
 }
 
 header {
-  background-color:  #00205b;
+  background-color: #00205b;
   color: #ffffff;
   padding: 1rem 2rem;
 }
@@ -74,7 +73,6 @@ nav ul li a:hover {
   }
 }
 
-/* Estilos Específicos do Dashboard */
 main {
   padding: 2rem 1rem;
   max-width: 1200px;
@@ -84,14 +82,14 @@ main {
 section {
   margin-bottom: 3rem;
   padding: 1.5rem;
-  background-color: #f5f7fa; /* Cor de fundo para as seções */
+  background-color: #f5f7fa;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 section h2,
 section h3 {
-  color:  #00205b;
+  color: #00205b;
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -102,11 +100,10 @@ section h3 {
   margin-top: 1rem;
 }
 
-/* Seção de Visão Geral (Dashboard Overview) */
 .dashboard-overview {
   text-align: center;
-  background-color: #ffffff; /* Fundo branco para destaque */
-  box-shadow: none; /* Sem sombra para um visual mais limpo na introdução */
+  background-color: #ffffff;
+  box-shadow: none;
 }
 
 .overview-cards {
@@ -118,9 +115,9 @@ section h3 {
 }
 
 .overview-card {
-  flex: 1 1 250px; /* Permite que os cards se ajustem, com largura base de 250px */
+  flex: 1 1 250px;
   max-width: 300px;
-  background-color: #e8ebf4; /* Fundo claro para os cards */
+  background-color: #e8ebf4;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -130,16 +127,15 @@ section h3 {
 .overview-card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color:  #00205b;
+  color: #00205b;
 }
 
 .overview-card p {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffb81c; /* Cor de destaque para os números */
+  color: #ffb81c;
 }
 
-/* Estilo para Listas de Projetos (Análise e Andamento) */
 .project-list {
   display: flex;
   flex-direction: column;
@@ -158,12 +154,12 @@ section h3 {
 }
 
 .project-item.in-progress {
-  border-left: 5px solid #ffb81c; /* Borda lateral amarela para projetos em andamento */
+  border-left: 5px solid #ffb81c;
 }
 
 .project-details h4 {
   font-size: 1.1rem;
-  color:  #00205b;
+  color: #00205b;
   margin-bottom: 0.5rem;
 }
 
@@ -172,11 +168,10 @@ section h3 {
   margin-bottom: 0.3rem;
 }
 
-/* NOVO: Estilos para o campo de comentário interno */
 .internal-comment-section {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px dashed #c2bfbf; /* Separador para o comentário */
+  border-top: 1px dashed #c2bfbf;
 }
 
 .internal-comment-section label {
@@ -194,16 +189,14 @@ section h3 {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 0.9rem;
-  resize: vertical; /* Permite redimensionar verticalmente */
-  background-color: #fcfcfc; /* Um fundo levemente diferente */
+  resize: vertical;
+  background-color: #fcfcfc;
   color: #333;
 }
 
 .internal-comment::placeholder {
   color: #999;
 }
-/* FIM NOVO */
-
 
 .project-actions {
   display: flex;
@@ -221,7 +214,7 @@ section h3 {
   color: #00205b;
   background-color: #ffffff;
   min-width: 180px;
-  flex-grow: 1; /* Permite que o select ocupe espaço disponível */
+  flex-grow: 1;
 }
 
 .project-actions button {
@@ -232,11 +225,11 @@ section h3 {
   font-weight: 500;
   font-size: 0.9rem;
   transition: background-color 0.2s ease;
-  white-space: nowrap; /* Evita que o texto do botão quebre linha */
+  white-space: nowrap;
 }
 
 .btn-approve {
-  background-color: #28a745; /* Verde para Aprovar */
+  background-color: #28a745;
   color: #ffffff;
 }
 
@@ -245,7 +238,7 @@ section h3 {
 }
 
 .btn-reject {
-  background-color: #dc3545; /* Vermelho para Recusar */
+  background-color: #dc3545;
   color: #ffffff;
 }
 
@@ -254,7 +247,7 @@ section h3 {
 }
 
 .btn-adjust {
-  background-color: #ffb81c; /* Amarelo para Ajustes */
+  background-color: #ffb81c;
   color: #00205b;
 }
 
@@ -264,7 +257,7 @@ section h3 {
 
 .btn-view-details,
 .btn-complete {
-  background-color: #007bff; /* Azul para Ver Detalhes e Concluir */
+  background-color: #007bff;
   color: #ffffff;
 }
 
@@ -273,7 +266,6 @@ section h3 {
   background-color: #0056b3;
 }
 
-/* Seção de Ações Administrativas */
 .dashboard-actions {
   text-align: center;
   margin-top: 3rem;
@@ -289,7 +281,7 @@ section h3 {
 
 .btn-action {
   padding: 1rem 2rem;
-  background-color: #00205b; /* Azul escuro */
+  background-color: #00205b;
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -304,7 +296,6 @@ section h3 {
   transform: translateY(-3px);
 }
 
-/* Footer */
 footer {
   background-color: #00205b;
   color: #ffffff;
@@ -318,52 +309,42 @@ footer p {
   color: #ffb81c;
 }
 
-/* Responsividade */
 @media (min-width: 768px) {
   .project-item {
-    flex-direction: column; /* Em telas maiores, mantém o layout de coluna para o item */
+    flex-direction: column;
     align-items: stretch;
   }
 
-  /* Ajusta o layout interno do project-item para telas maiores */
-  .project-details, .internal-comment-section, .project-actions {
+  .project-details,
+  .internal-comment-section,
+  .project-actions {
     width: 100%;
   }
 
   .project-actions {
-    flex-wrap: nowrap; /* Tenta manter botões na mesma linha */
-    justify-content: flex-end; /* Alinha botões à direita */
+    flex-wrap: nowrap;
+    justify-content: flex-end;
   }
 
   .professor-select {
-    margin-right: 0.8rem; /* Espaço entre o select e os botões */
-    flex-grow: 0; /* Não cresce desnecessariamente em telas maiores */
+    margin-right: 0.8rem;
+    flex-grow: 0;
   }
 }
 
 @media (max-width: 576px) {
   .overview-card {
-    flex: 1 1 100%; /* Cards de visão geral empilhados em telas pequenas */
+    flex: 1 1 100%;
     max-width: none;
   }
 
   .project-actions button,
   .professor-select {
-    width: 100%; /* Botões e select com largura total em telas pequenas */
-    margin: 0.4rem 0; /* Espaçamento entre eles */
+    width: 100%;
+    margin: 0.4rem 0;
   }
   .project-actions {
-    flex-direction: column; /* Empilha os elementos de ação */
-    align-items: stretch; /* Estica para preencher a largura */
+    flex-direction: column;
+    align-items: stretch;
   }
 }
-
-
-
-
-
-
-
-
-
-

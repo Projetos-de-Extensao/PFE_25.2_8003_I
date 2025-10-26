@@ -1,119 +1,116 @@
-/* gerenciamento-projeto.css */
-
 :root {
-    --azul-ibmec: #0056b3;
-    --amarelo-ibmec: #ffd200;
-    --branco: #ffffff;
-    --cinza-claro: #f5f5f5;
-    --cinza-medio: #e0e0e0;
-    --cinza-escuro: #333333;
+  --azul-ibmec: #0056b3;
+  --amarelo-ibmec: #ffd200;
+  --branco: #ffffff;
+  --cinza-claro: #f5f5f5;
+  --cinza-medio: #e0e0e0;
+  --cinza-escuro: #333333;
 }
-
-/* ... (outros estilos gerais) ... */
 
 .main-content {
-    flex: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 2rem;
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
 }
 
-.page-header, .project-header, .section {
-    background-color: var(--branco);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.page-header,
+.project-header,
+.section {
+  background-color: var(--branco);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.page-header h1, .project-title, .section-title {
-    color: var(--azul-ibmec);
-    margin-bottom: 0.5rem;
+.page-header h1,
+.project-title,
+.section-title {
+  color: var(--azul-ibmec);
+  margin-bottom: 0.5rem;
 }
 
-/* --- ESTA É A CORREÇÃO --- */
 .project-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem; /* Aumentado para melhor espaçamento */
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 20px;
 }
 
 .info-item {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-label {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
 }
 
 .info-value {
-    font-weight: 600;
+  font-weight: 600;
 }
-/* --- FIM DA CORREÇÃO --- */
 
-
-/* Sistema de Abas */
 .tabs-system {
-    width: 100%;
+  width: 100%;
 }
 
 .tabs {
-    display: flex;
-    border-bottom: 1px solid var(--cinza-medio);
-    margin-bottom: 20px;
+  display: flex;
+  border-bottom: 1px solid var(--cinza-medio);
+  margin-bottom: 20px;
 }
 
 .tab {
-    padding: 10px 20px;
-    cursor: pointer;
-    border-bottom: 3px solid transparent;
-    transition: all 0.3s;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
 }
 
 .tab:hover {
-    background-color: rgba(0, 86, 179, 0.05);
+  background-color: rgba(0, 86, 179, 0.05);
 }
 
 .tabs .tab.active {
-    border-bottom: 3px solid var(--azul-ibmec);
-    color: var(--azul-ibmec);
-    font-weight: 600;
+  border-bottom: 3px solid var(--azul-ibmec);
+  color: var(--azul-ibmec);
+  font-weight: 600;
 }
 
-/* Formulários e outros elementos */
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: var(--azul-ibmec);
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--azul-ibmec);
 }
 
-input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--cinza-medio);
-    border-radius: 4px;
-    font-size: 1rem;
-    background-color: var(--branco);
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--cinza-medio);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--branco);
 }
 
 .btn {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
 }
 .btn-primary {
-    background-color: var(--azul-ibmec);
-    color: var(--branco);
+  background-color: var(--azul-ibmec);
+  color: var(--branco);
 }
