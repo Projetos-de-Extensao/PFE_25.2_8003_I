@@ -69,10 +69,65 @@ form {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
+  margin: 2.5rem auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  box-sizing: border-box;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+  margin-bottom: 0.3rem;
+  padding-top: 0;
+}
+
+.logo-semfundo {
+  display: block;
+  width: 260px;
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  margin-bottom: -6px;
+  transform: translateY(0);
+}
+
+.form-header h2 {
+  margin: 6px 0 0;
+  font-size: 28px;
+  line-height: 1.02;
+  color: #00205b;
+}
+.form-header h3 {
+  margin: 6px 0 8px;
+  font-size: 1rem;
+  color: #16345a;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .logo-semfundo {
+    width: 220px;
+    margin-bottom: -4px;
+  }
+  .form-header h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .logo-semfundo {
+    width: 160px;
+    margin-bottom: -2px;
+  }
+  .form-header h2 {
+    font-size: 20px;
+  }
 }
 
 label {
@@ -80,7 +135,6 @@ label {
   color: #00205b;
   text-align: left;
 }
-
 input,
 select {
   padding: 0.8rem;
@@ -90,7 +144,6 @@ select {
   font-size: 1rem;
   transition: border-color 0.3s;
 }
-
 input:focus,
 select:focus {
   border-color: #00205b;
@@ -109,8 +162,17 @@ button {
 }
 
 button:hover {
-  background-color: #ffb81c;
-  color: #00205b;
+  background-color: #00337f;
+}
+
+@media (max-width: 600px) {
+  .logo-semfundo {
+    max-width: 180px;
+  }
+  form {
+    padding: 1.25rem;
+    margin: 1.5rem 1rem;
+  }
 }
 
 footer {
@@ -123,4 +185,22 @@ footer {
 
 footer p {
   color: #ffb81c;
+}
+
+.logo-semfundo {
+  display: block;
+  margin: 0 auto;
+  max-width: 320px;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.12rem;
+}
+
+@media (max-width: 600px) {
+  .logo-semfundo {
+    max-width: 220px;
+    width: 55%;
+    height: auto;
+  }
 }

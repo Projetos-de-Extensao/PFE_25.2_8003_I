@@ -17,6 +17,14 @@ function LoginPage() {
   return (
     <MainLayout centerContent={true}>
       <form onSubmit={handleSubmit}>
+        <div className="form-header">
+          <img
+            src="/imagens/logo+titulo-semfundo.png"
+            alt="Projetify"
+            className="logo-semfundo"
+          />
+        </div>
+
         <FormInput
           label="E-mail/Matrícula"
           id="email_matricula"

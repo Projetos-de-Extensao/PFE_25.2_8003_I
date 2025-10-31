@@ -6,6 +6,16 @@ function CadastroPage() {
   return (
     <MainLayout centerContent={true}>
       <form>
+        <div className="form-header">
+          <img
+            src="/imagens/logo+titulo-semfundo.png"
+            alt="Projetify"
+            className="logo-semfundo"
+          />
+          <h2>Boas-Vindas!</h2>
+          <h3>Crie sua conta e junte-se à plataforma!</h3>
+        </div>
+
         <label htmlFor="perfil">Tipo de Perfil</label>
         <select id="perfil" name="perfil" required>
           <option value="">Selecione...</option>

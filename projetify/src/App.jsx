@@ -14,7 +14,7 @@ import ProjetoPage from "./pages/Projeto/ProjetoPage";
 function App() {
   //return <HomePage />;
   //return <CadastroUsuarioPage />;
-  //return <LoginPage />;
+  return <LoginPage />;
   //return <CadastroProjetoPage />;
   //return <DashboardEmpresaPage />;
   //return <DashboardCoordenacaoPage />;
