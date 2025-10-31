@@ -159,3 +159,100 @@ footer {
   color: white;
   font-size: 0.9rem;
 }
+
+.entregas {
+  margin: 30px 0;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.entregas h3 {
+  color: #0b132b;
+  margin-bottom: 20px;
+}
+
+.upload-form {
+  background: #f1f5fb;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-top: 1px dashed #ccc;
+  padding-top: 20px;
+}
+
+.upload-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.upload-form input[type="file"] {
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.upload-form p {
+  font-size: 0.9rem;
+  color: #0b132b;
+  font-style: italic;
+}
+
+.upload-form .btn-enviar {
+  width: fit-content;
+}
+
+.feedback {
+  margin-top: 20px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.lista-entregas-anteriores {
+  margin-bottom: 25px;
+}
+
+.lista-entregas-anteriores h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.lista-entregas-anteriores ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lista-entregas-anteriores li {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.lista-entregas-anteriores .nome-ficheiro {
+  font-weight: 500;
+  color: #0056b3;
+}
+
+.lista-entregas-anteriores .data-entrega {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.lista-entregas-anteriores p {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+}
