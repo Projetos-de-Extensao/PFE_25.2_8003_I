@@ -16,12 +16,12 @@ function App() {
   //return <CadastroUsuarioPage />;
   //return <LoginPage />;
   //return <CadastroProjetoPage />;
-  //return <DashboardEmpresaPage />;
+  return <DashboardEmpresaPage />;
   //return <DashboardCoordenacaoPage />;
   //return <DashboardProfessorPage />;
   //return <GerenciamentoProjetoPage />;
   //return <DashboardAlunoPage />;
-  return <ProjetoPage />;
+  //return <ProjetoPage />;
 }
 
 export default App;

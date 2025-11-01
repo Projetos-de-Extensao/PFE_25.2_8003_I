@@ -111,6 +111,7 @@ function DashboardEmpresaPage() {
 
         <section className="projetos">
           <h3>Seus Projetos</h3>
+          <button className="botao-cadastro">Cadastrar novo Projeto</button>
           <div className="cards-container">
             {isLoading ? (
               <p>A carregar projetos...</p>

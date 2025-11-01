@@ -270,6 +270,19 @@ footer p {
   color: #ffb81c;
 }
 
+.botao-cadastro {
+  display: flex;
+  margin: 0 auto 0.8rem;
+  color: #ffffff;
+  align-content: center;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
 @media (max-width: 767px) {
   nav {
     flex-direction: column;
