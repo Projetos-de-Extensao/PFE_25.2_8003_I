@@ -14,23 +14,30 @@ function HomePage() {
       const dadosExemplo = [
         {
           id: "x",
-          title: "Projeto X (Concluído)",
+          title: "Projeto X",
           description:
             "Implementação de sistema de IA para análise preditiva de vendas.",
           image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
         },
         {
           id: "y",
-          title: "Projeto Y (Concluído)",
+          title: "Projeto Y",
           description:
             "Desenvolvimento de aplicativo mobile multiplataforma para gestão de tarefas.",
           image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
         },
         {
           id: "z",
-          title: "Projeto Z (Concluído)",
+          title: "Projeto Z",
           description:
             "Criação de plataforma web acessível para ONG de inclusão social.",
+          image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
+        },
+        {
+          id: "a",
+          title: "Projeto A",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
         },
       ];
