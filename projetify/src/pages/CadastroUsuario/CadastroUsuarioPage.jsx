@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
+import { DataContext } from "../../context/DataContext";
 import "../../styles/cadastro_usuario.css";
 
 function CadastroPage() {
+  const { addUser } = useContext(DataContext);
+
+  const [perfil, setPerfil] = useState("");
+  const [email, setEmail] = useState("");
+  const [nome, setNome] = useState("");
+  const [senha, setSenha] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    addUser({ perfil, email, nome, senha });
+
+    alert("Usuário cadastrado com sucesso!");
+    setPerfil("");
+    setEmail("");
+    setNome("");
+    setSenha("");
+  };
+
   return (
     <MainLayout centerContent={true}>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="form-header">
           <img
             src="/imagens/logo+titulo-semfundo.png"

@@ -15,7 +15,7 @@ function App() {
   //return <HomePage />;
   //return <CadastroUsuarioPage />;
   //return <LoginPage />;
-  return <CadastroProjetoPage />;
+  //return <CadastroProjetoPage />;
   //return <DashboardEmpresaPage />;
   //return <DashboardCoordenacaoPage />;
   //return <DashboardProfessorPage />;
