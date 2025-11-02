@@ -1,25 +1,52 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
+import { DataContext } from "../../context/DataContext";
 import "../../styles/cadastro_projeto.css";
 
 function CadastroProjetoPage() {
-  // Simulação de submit para o formulário
+  const { addProject } = useContext(DataContext);
+
+  const [formData, setFormData] = useState({
+    titulo: "",
+    descricao: "",
+    categoria: "",
+    prioridade: "",
+    data_inicio: "",
+    data_termino: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const dataInicio = new Date(document.getElementById("data_inicio").value);
-    const dataTermino = new Date(document.getElementById("data_termino").value);
 
-    if (dataTermino < dataInicio) {
+    if (formData.data_termino < formData.data_inicio) {
       alert("A data de término não pode ser anterior à data de início!");
       return;
     }
 
+    addProject(formData);
+
     alert("Projeto cadastrado com sucesso!");
-    event.target.reset();
+
+    setFormData({
+      titulo: "",
+      descricao: "",
+      categoria: "",
+      prioridade: "",
+      data_inicio: "",
+      data_termino: "",
+    });
   };
 
   return (
-    <MainLayout centerContent={true} isDashboardPage={true}>
+    <MainLayout centerContent={true}>
       <form id="formCadastroProjeto" onSubmit={handleSubmit}>
         <div className="form-header">
           <h2>Cadastrar Novo Projeto</h2>
@@ -34,6 +61,8 @@ function CadastroProjetoPage() {
             name="titulo"
             placeholder="Digite o título do projeto"
             required
+            value={formData.titulo}
+            onChange={handleInputChange}
           />
         </div>
 
@@ -44,13 +73,21 @@ function CadastroProjetoPage() {
             name="descricao"
             placeholder="Descreva o objetivo e escopo do projeto"
             required
+            value={formData.descricao}
+            onChange={handleInputChange}
           ></textarea>
         </div>
 
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="categoria">Categoria</label>
-            <select id="categoria" name="categoria" required>
+            <select
+              id="categoria"
+              name="categoria"
+              required
+              value={formData.categoria}
+              onChange={handleInputChange}
+            >
               <option value="">Selecione...</option>
               <option value="tecnologia">Tecnologia</option>
               <option value="pesquisa">Pesquisa</option>
@@ -59,9 +96,16 @@ function CadastroProjetoPage() {
               <option value="social">Social</option>
             </select>
           </div>
+
           <div className="form-group">
             <label htmlFor="prioridade">Prioridade</label>
-            <select id="prioridade" name="prioridade" required>
+            <select
+              id="prioridade"
+              name="prioridade"
+              required
+              value={formData.prioridade}
+              onChange={handleInputChange}
+            >
               <option value="">Selecione...</option>
               <option value="baixa">Baixa</option>
               <option value="media">Média</option>
@@ -74,11 +118,25 @@ function CadastroProjetoPage() {
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="data_inicio">Data de Início</label>
-            <input type="date" id="data_inicio" name="data_inicio" required />
+            <input
+              type="date"
+              id="data_inicio"
+              name="data_inicio"
+              required
+              value={formData.data_inicio}
+              onChange={handleInputChange}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="data_termino">Data de Término</label>
-            <input type="date" id="data_termino" name="data_termino" required />
+            <input
+              type="date"
+              id="data_termino"
+              name="data_termino"
+              required
+              value={formData.data_termino}
+              onChange={handleInputChange}
+            />
           </div>
         </div>
 
