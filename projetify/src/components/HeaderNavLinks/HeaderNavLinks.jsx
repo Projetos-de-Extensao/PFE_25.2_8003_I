@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./headerNavLinks.css";
 
 function HeaderNavLinks({ showLogout = false }) {
@@ -7,14 +8,14 @@ function HeaderNavLinks({ showLogout = false }) {
       {showLogout ? (
         <>
           <li>
-            <a href="#home" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#dashboard" className="nav-link">
+            <Link to="/dashboard" className="nav-link">
               Dashboard
-            </a>
+            </Link>
           </li>
           <li>
             <a
@@ -29,19 +30,19 @@ function HeaderNavLinks({ showLogout = false }) {
       ) : (
         <>
           <li>
-            <a href="#home" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#cadastro" className="nav-link">
+            <Link to="/cadastro" className="nav-link">
               Cadastre-se
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#login" className="nav-link login-link">
+            <Link to="/login" className="nav-link login-link">
               Login
-            </a>
+            </Link>
           </li>
         </>
       )}
