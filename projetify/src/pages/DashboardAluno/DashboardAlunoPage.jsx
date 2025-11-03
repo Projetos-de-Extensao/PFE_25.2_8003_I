@@ -50,7 +50,7 @@ function DashboardAlunoPage() {
   return (
     <MainLayout isDashboardPage={true}>
       <div className="dashboard-aluno-container">
-        <section className="boas-vindas">
+        <section className="boas-vindas-aluno">
           <h2>
             Bem-vindo(a), <span id="nomeAluno">{alunoNome}</span> 👋
           </h2>

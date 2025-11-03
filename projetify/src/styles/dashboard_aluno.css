@@ -54,17 +54,17 @@ main {
   margin: 30px auto;
 }
 
-.boas-vindas {
+.boas-vindas-aluno {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.boas-vindas h2 {
+.boas-vindas-aluno h2 {
   color: #0b132b;
   font-size: 1.8rem;
 }
 
-.boas-vindas p {
+.boas-vindas-aluno p {
   color: #555;
   margin-top: 8px;
 }
