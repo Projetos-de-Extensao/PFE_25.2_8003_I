@@ -67,7 +67,7 @@ function DashboardEmpresaPage() {
   return (
     <MainLayout isDashboardPage={true}>
       <div className="dashboard-empresa-container">
-        <section className="boas-vindas">
+        <section className="boas-vindas-empresa">
           <h2>
             Bem-vindo(a), <span id="nomeEmpresa">{empresaNome}</span> 👋
           </h2>

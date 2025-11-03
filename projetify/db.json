@@ -1,0 +1,84 @@
+{
+    "projetos": [
+        {
+            "id": 1,
+            "titulo": "Análise de Algoritmos para Ordenação",
+            "responsavel": "Ana Sousa",
+            "prazo": "2025-06-30",
+            "progresso": 100,
+            "status": "Concluído",
+            "disciplina": "Engenharia de Software",
+            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+        },
+        {
+            "id": 2,
+            "titulo": "Modelagem de Fenômenos Ópticos",
+            "responsavel": "Bruno Lima",
+            "prazo": "2025-05-15",
+            "progresso": 100,
+            "status": "Concluído",
+            "disciplina": "Física",
+            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+        },
+        {
+            "id": 3,
+            "titulo": "Síntese de Compostos Orgânicos",
+            "responsavel": "Carla Mendes",
+            "prazo": "2025-04-01",
+            "progresso": 100,
+            "status": "Concluído",
+            "disciplina": "Química",
+            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+        },
+        {
+            "id": 4,
+            "titulo": "Projeto de Aplicativo Mobile",
+            "responsavel": "Diego Pereira",
+            "prazo": "2025-08-20",
+            "progresso": 100,
+            "status": "Concluído",
+            "disciplina": "Engenharia de Software",
+            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+        },
+        {
+            "id": 5,
+            "titulo": "Estudo da Biodiversidade Local",
+            "responsavel": "Elisa Fernandes",
+            "prazo": "2025-07-10",
+            "progresso": 100,
+            "status": "Concluído",
+            "disciplina": "Biologia",
+            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+        },
+        {
+            "id": 6,
+            "titulo": "Análise Econômica de Mercado",
+            "responsavel": "Fábio Rocha",
+            "prazo": "2025-09-30",
+            "progresso": 100,
+            "status": "Concluído",
+            "disciplina": "Administração",
+            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+        },
+        {
+            "id": 7,
+            "titulo": "Pesquisa sobre Revoluções Mundiais",
+            "responsavel": "Glória Santos",
+            "prazo": "2025-03-15",
+            "progresso": 100,
+            "status": "Concluído",
+            "disciplina": "História",
+            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+        },
+        {
+            "id": 8,
+            "titulo": "Identidade Visual para Marca X",
+            "responsavel": "Henrique Costa",
+            "prazo": "2025-05-05",
+            "progresso": 100,
+            "status": "Concluído",
+            "disciplina": "Design",
+            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+        }
+    ]
+}

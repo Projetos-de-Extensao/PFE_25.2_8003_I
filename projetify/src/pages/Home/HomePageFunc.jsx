@@ -8,34 +8,45 @@ function HomePage() {
   const [isLoadingHallOfFame, setIsLoadingHallOfFame] = useState(true);
 
   useEffect(() => {
-    console.log("useEffect executado! Carregando países...");
+    console.log("A buscar projetos do Hall da Fama...");
+    setIsLoadingHallOfFame(true);
+    setTimeout(() => {
+      const dadosExemplo = [
+        {
+          id: "x",
+          title: "Projeto X",
+          description:
+            "Implementação de sistema de IA para análise preditiva de vendas.",
+          image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
+        },
+        {
+          id: "y",
+          title: "Projeto Y",
+          description:
+            "Desenvolvimento de aplicativo mobile multiplataforma para gestão de tarefas.",
+          image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
+        },
+        {
+          id: "z",
+          title: "Projeto Z",
+          description:
+            "Criação de plataforma web acessível para ONG de inclusão social.",
+          image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
+        },
+        {
+          id: "a",
+          title: "Projeto A",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          image: "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png",
+        },
+      ];
 
-    const loadProject = () => {
-      fetch("http://localhost:3000/projetos")
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Projetos carregados:", data.length);
-          const mapped = data.map((projeto) => ({
-            id: projeto.id,
-            titulo: projeto.titulo,
-            responsavel: projeto.responsavel,
-            prazo: projeto.prazo,
-            progresso: projeto.progresso,
-            status: projeto.status,
-            disciplina: projeto.disciplina,
-            imagem: projeto.imagem,
-          }));
-
-          console.log("Projetos mapped", mapped);
-          setHallOfFameProjects(mapped);
-          setIsLoadingHallOfFame(false);
-        })
-        .catch((error) => {
-          console.error("Erro ao carregar projetos:", error);
-          setIsLoadingHallOfFame(false);
-        });
-    };
-    loadProject();
+      
+      setHallOfFameProjects(dadosExemplo);
+      setIsLoadingHallOfFame(false);
+      console.log("Projetos do Hall da Fama carregados.");
+    }, 800);
   }, []);
 
   const handleCardClick = (id) => {
@@ -50,26 +61,16 @@ function HomePage() {
           {isLoadingHallOfFame ? (
             <p>A carregar Hall da Fama...</p>
           ) : hallOfFameProjects.length > 0 ? (
-            hallOfFameProjects.slice(0, 4).map((projeto) => (
+            hallOfFameProjects.map((project) => (
               <ProjectCard
-                key={projeto.id}
-                id={projeto.id}
-                titulo={projeto.titulo}
-                imagem={projeto.imagem}
-                progresso={projeto.progresso}
+                key={project.id}
+                title={project.title}
+                image={project.image}
+                
+                onDetailsClick={() => handleCardClick(project.id)}
+                detailsButtonText="Saber Mais"
               >
-                <p>
-                  <strong>Responsável:</strong> {projeto.responsavel}
-                </p>
-                <p>
-                  <strong>Disciplina:</strong> {projeto.disciplina}
-                </p>
-                <p>
-                  <strong>Prazo:</strong> {projeto.prazo}
-                </p>
-                <p>
-                  <strong>Status:</strong> {projeto.status}
-                </p>
+                <p>{project.description}</p>
               </ProjectCard>
             ))
           ) : (

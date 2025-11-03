@@ -89,13 +89,14 @@ h4 {
   margin-bottom: 1rem;
 }
 
-.boas-vindas {
+.boas-vindas-empresa {
   color: white;
 }
 
-.boas-vindas h2,
-.boas-vindas p {
-  color: white;
+.boas-vindas-empresa h2,
+.boas-vindas-empresa p {
+  color: #00205b;
+  text-align: center;
 }
 
 .estatisticas {

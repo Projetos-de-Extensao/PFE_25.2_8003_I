@@ -9,7 +9,7 @@ function CadastroProjetoPage() {
   const [formData, setFormData] = useState({
     titulo: "",
     descricao: "",
-    categoria: "",
+    disciplina: "",
     prioridade: "",
     data_inicio: "",
     data_termino: "",
@@ -38,7 +38,7 @@ function CadastroProjetoPage() {
     setFormData({
       titulo: "",
       descricao: "",
-      categoria: "",
+      disciplina: "",
       prioridade: "",
       data_inicio: "",
       data_termino: "",
@@ -80,7 +80,7 @@ function CadastroProjetoPage() {
 
         <div className="form-row">
           <div className="form-group">
-            <label htmlFor="categoria">Categoria</label>
+            <label htmlFor="categoria">Disciplina</label>
             <select
               id="categoria"
               name="categoria"
@@ -89,11 +89,12 @@ function CadastroProjetoPage() {
               onChange={handleInputChange}
             >
               <option value="">Selecione...</option>
-              <option value="tecnologia">Tecnologia</option>
-              <option value="pesquisa">Pesquisa</option>
-              <option value="desenvolvimento">Desenvolvimento</option>
-              <option value="inovacao">Inovação</option>
-              <option value="social">Social</option>
+              <option value="tecnologia">Front-End</option>
+              <option value="pesquisa">Back-End</option>
+              <option value="desenvolvimento">Cloud</option>
+              <option value="inovacao">BI</option>
+              <option value="social">Redes</option>
+              <option value="social">Machine Learning</option>
             </select>
           </div>
 

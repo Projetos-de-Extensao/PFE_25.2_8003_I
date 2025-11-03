@@ -23,9 +23,9 @@ function App() {
       <Route path="/cadastro" element={<CadastroUsuarioPage />} />
       
      
-      <Route path="/dashboard" element={<DashboardAlunoPage />} />
+      {/*<Route path="/dashboard" element={<DashboardAlunoPage />} />*/}
       <Route path="/dashboard-aluno" element={<DashboardAlunoPage />} />
-      <Route path="/dashboard-empresa" element={<DashboardEmpresaPage />} />
+      <Route path="/dashboard" element={<DashboardEmpresaPage />} />
       <Route path="/dashboard-coordenacao" element={<DashboardCoordenacaoPage />} />
       <Route path="/dashboard-professor" element={<DashboardProfessorPage />} />
 
