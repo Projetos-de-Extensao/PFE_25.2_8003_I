@@ -38,10 +38,6 @@ function HomePage() {
     loadProject();
   }, []);
 
-  const handleCardClick = (id) => {
-    console.log("Clicou no card do projeto do Hall da Fama:", id);
-  };
-
   return (
     <MainLayout>
       <section className="hall-fama">

@@ -1,5 +1,6 @@
 import React from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
+import { Link } from "react-router-dom";
 import "../../styles/dashboard_professor.css";
 
 function DashboardProfessorPage() {
@@ -184,9 +185,11 @@ function DashboardProfessorPage() {
                       />
                     </td>
                     <td>
-                      <a href="#" className="btn btn-primary btn-small">
-                        Gerenciar
-                      </a>
+                      <Link to={"/gerenciamento-projeto/:id"}>
+                        <button className="btn btn-primary btn-small">
+                          Gerenciar
+                        </button>
+                      </Link>
                       <button
                         type="submit"
                         className="btn btn-secondary btn-small"

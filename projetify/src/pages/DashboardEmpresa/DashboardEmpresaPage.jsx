@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import { Link } from "react-router-dom";
 import "../../styles/dashboard_empresa.css";
 
 function DashboardEmpresaPage() {
@@ -111,7 +112,9 @@ function DashboardEmpresaPage() {
 
         <section className="projetos">
           <h3>Seus Projetos</h3>
-          <button className="botao-cadastro">Cadastrar novo Projeto</button>
+          <Link to={"/cadastro-projeto"}>
+            <button className="botao-cadastro">Cadastrar novo Projeto</button>
+          </Link>
           <div className="cards-container">
             {isLoading ? (
               <p>A carregar projetos...</p>
