@@ -1,84 +1,84 @@
 {
-    "projetos": [
-        {
-            "id": 1,
-            "titulo": "Análise de Algoritmos para Ordenação",
-            "responsavel": "Ana Sousa",
-            "prazo": "2025-06-30",
-            "progresso": 100,
-            "status": "Concluído",
-            "disciplina": "Engenharia de Software",
-            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-        },
-        {
-            "id": 2,
-            "titulo": "Modelagem de Fenômenos Ópticos",
-            "responsavel": "Bruno Lima",
-            "prazo": "2025-05-15",
-            "progresso": 100,
-            "status": "Concluído",
-            "disciplina": "Física",
-            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-        },
-        {
-            "id": 3,
-            "titulo": "Síntese de Compostos Orgânicos",
-            "responsavel": "Carla Mendes",
-            "prazo": "2025-04-01",
-            "progresso": 100,
-            "status": "Concluído",
-            "disciplina": "Química",
-            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-        },
-        {
-            "id": 4,
-            "titulo": "Projeto de Aplicativo Mobile",
-            "responsavel": "Diego Pereira",
-            "prazo": "2025-08-20",
-            "progresso": 100,
-            "status": "Concluído",
-            "disciplina": "Engenharia de Software",
-            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-        },
-        {
-            "id": 5,
-            "titulo": "Estudo da Biodiversidade Local",
-            "responsavel": "Elisa Fernandes",
-            "prazo": "2025-07-10",
-            "progresso": 100,
-            "status": "Concluído",
-            "disciplina": "Biologia",
-            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-        },
-        {
-            "id": 6,
-            "titulo": "Análise Econômica de Mercado",
-            "responsavel": "Fábio Rocha",
-            "prazo": "2025-09-30",
-            "progresso": 100,
-            "status": "Concluído",
-            "disciplina": "Administração",
-            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-        },
-        {
-            "id": 7,
-            "titulo": "Pesquisa sobre Revoluções Mundiais",
-            "responsavel": "Glória Santos",
-            "prazo": "2025-03-15",
-            "progresso": 100,
-            "status": "Concluído",
-            "disciplina": "História",
-            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-        },
-        {
-            "id": 8,
-            "titulo": "Identidade Visual para Marca X",
-            "responsavel": "Henrique Costa",
-            "prazo": "2025-05-05",
-            "progresso": 100,
-            "status": "Concluído",
-            "disciplina": "Design",
-            "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
-        }
-    ]
+  "projetos": [
+    {
+      "id": 1,
+      "titulo": "Desenvolvimento de API REST para E-commerce",
+      "responsavel": "Ana Sousa",
+      "prazo": "2025-06-30",
+      "progresso": 100,
+      "status": "Concluído",
+      "disciplina": "Back-End",
+      "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+    },
+    {
+      "id": 2,
+      "titulo": "Modelo Preditivo de Análise de Sentimento",
+      "responsavel": "Bruno Lima",
+      "prazo": "2025-05-15",
+      "progresso": 100,
+      "status": "Concluído",
+      "disciplina": "Machine Learning",
+      "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+    },
+    {
+      "id": 3,
+      "titulo": "Migração de Infraestrutura para AWS",
+      "responsavel": "Carla Mendes",
+      "prazo": "2025-04-01",
+      "progresso": 100,
+      "status": "Concluído",
+      "disciplina": "Cloud",
+      "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+    },
+    {
+      "id": 4,
+      "titulo": "Criação de Dashboard Interativo",
+      "responsavel": "Diego Pereira",
+      "prazo": "2025-08-20",
+      "progresso": 100,
+      "status": "Concluído",
+      "disciplina": "Front-End",
+      "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+    },
+    {
+      "id": 5,
+      "titulo": "Dashboard de Análise de Vendas",
+      "responsavel": "Elisa Fernandes",
+      "prazo": "2025-07-10",
+      "progresso": 50,
+      "status": "Em andamento",
+      "disciplina": "BI",
+      "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+    },
+    {
+      "id": 6,
+      "titulo": "Implementação de VPN e Topologia de Rede",
+      "responsavel": "Fábio Rocha",
+      "prazo": "2025-09-30",
+      "progresso": 75,
+      "status": "Em andamento",
+      "disciplina": "Redes",
+      "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+    },
+    {
+      "id": 7,
+      "titulo": "Autenticação e Microsserviços",
+      "responsavel": "Glória Santos",
+      "prazo": "2025-03-15",
+      "progresso": 10,
+      "status": "Em andamento",
+      "disciplina": "Back-End",
+      "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+    },
+    {
+      "id": 8,
+      "titulo": "Design System e UI/UX",
+      "responsavel": "Henrique Costa",
+      "prazo": "2025-05-05",
+      "progresso": 90,
+      "status": "Em andamento",
+      "disciplina": "Front-End",
+      "imagem": "/imagens/Gemini_Generated_Image_8cappt8cappt8cap.png"
+    }
+  ]
 }

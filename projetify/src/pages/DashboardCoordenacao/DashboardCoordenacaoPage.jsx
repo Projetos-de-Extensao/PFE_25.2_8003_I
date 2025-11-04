@@ -1,5 +1,6 @@
 import React from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
+import { Link } from "react-router-dom";
 import "../../styles/dashboard_coord.css";
 
 function DashboardCoordenacaoPage() {
@@ -116,7 +117,9 @@ function DashboardCoordenacaoPage() {
                 </p>
               </div>
               <div className="project-actions">
-                <button className="btn-view-details">Ver Detalhes</button>
+                <Link to={"/projeto/:id"}>
+                  <button className="btn-view-details">Ver Detalhes</button>
+                </Link>
                 <button className="btn-complete">Concluir Projeto</button>
               </div>
             </div>
