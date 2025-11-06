@@ -101,9 +101,11 @@ function DashboardProfessorPage() {
                       />
                     </td>
                     <td>
-                      <a href="#" className="btn btn-primary btn-small">
-                        Gerenciar
-                      </a>
+                      <Link to={"/gerenciamento-projeto/:id"}>
+                        <button className="btn btn-primary btn-small">
+                          Gerenciar
+                        </button>
+                      </Link>
                       <button
                         type="submit"
                         className="btn btn-secondary btn-small"
@@ -143,9 +145,11 @@ function DashboardProfessorPage() {
                       />
                     </td>
                     <td>
-                      <a href="#" className="btn btn-primary btn-small">
-                        Gerenciar
-                      </a>
+                      <Link to={"/gerenciamento-projeto/:id"}>
+                        <button className="btn btn-primary btn-small">
+                          Gerenciar
+                        </button>
+                      </Link>
                       <button
                         type="submit"
                         className="btn btn-secondary btn-small"
