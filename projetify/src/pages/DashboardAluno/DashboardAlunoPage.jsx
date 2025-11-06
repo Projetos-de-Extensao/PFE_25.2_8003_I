@@ -13,39 +13,33 @@ function DashboardAlunoPage() {
     if (nomeSalvo) {
       setAlunoNome(nomeSalvo);
     }
+    const loadProject = () => {
+      fetch("http://localhost:3000/projetos")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Projetos carregados:", data.length);
+          const mapped = data.map((projeto) => ({
+            id: projeto.id,
+            titulo: projeto.titulo,
+            responsavel: projeto.responsavel,
+            prazo: projeto.prazo,
+            progresso: projeto.progresso,
+            status: projeto.status,
+            disciplina: projeto.disciplina,
+            imagem: projeto.imagem,
+          }));
 
-    console.log("A buscar projetos do aluno...");
-    setIsLoading(true);
-    setTimeout(() => {
-      const dadosExemplo = [
-        {
-          id: 1,
-          titulo: "Projeto Integrador - App Sustentável",
-          orientador: "Prof. Carlos Souza",
-          progresso: 70,
-        },
-        {
-          id: 2,
-          titulo: "Sistema de Agendamento Escolar",
-          orientador: "Prof. Ana Pereira",
-          progresso: 45,
-        },
-        {
-          id: 3,
-          titulo: "Plataforma de Doações Online",
-          orientador: "Prof. João Lima",
-          progresso: 90,
-        },
-      ];
-      setProjetos(dadosExemplo);
-      setIsLoading(false);
-      console.log("Projetos do aluno carregados.");
-    }, 1000);
+          console.log("Projetos mapped", mapped);
+          setProjetos(mapped);
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.error("Erro ao carregar projetos:", error);
+          setIsLoading(false);
+        });
+    };
+    loadProject();
   }, []);
-
-  const handleVerDetalhes = (id) => {
-    console.log("Ver detalhes do projeto:", id);
-  };
 
   return (
     <MainLayout isDashboardPage={true}>
@@ -63,14 +57,27 @@ function DashboardAlunoPage() {
             {isLoading ? (
               <p>A carregar projetos...</p>
             ) : projetos.length > 0 ? (
-              projetos.map((projeto) => (
+              projetos.slice(5, 8).map((projeto) => (
                 <ProjectCard
                   key={projeto.id}
-                  title={projeto.titulo}
-                  responsible={projeto.orientador}
-                  progress={projeto.progresso}
-                  onDetailsClick={() => handleVerDetalhes(projeto.id)}
-                />
+                  id={projeto.id}
+                  titulo={projeto.titulo}
+                  imagem={projeto.imagem}
+                  progresso={projeto.progresso}
+                >
+                  <p>
+                    <strong>Responsável:</strong> {projeto.responsavel}
+                  </p>
+                  <p>
+                    <strong>Disciplina:</strong> {projeto.disciplina}
+                  </p>
+                  <p>
+                    <strong>Prazo:</strong> {projeto.prazo}
+                  </p>
+                  <p>
+                    <strong>Status:</strong> {projeto.status}
+                  </p>
+                </ProjectCard>
               ))
             ) : (
               <p>Ainda não está alocado a nenhum projeto.</p>

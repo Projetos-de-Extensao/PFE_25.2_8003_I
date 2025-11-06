@@ -12,15 +12,15 @@ function DashboardCoordenacaoPage() {
           <div className="overview-cards">
             <div className="overview-card">
               <h3>Projetos Pendentes</h3>
-              <p>5</p>
+              <p>2</p>
             </div>
             <div className="overview-card">
               <h3>Projetos em Andamento</h3>
-              <p>12</p>
+              <p>3</p>
             </div>
             <div className="overview-card">
               <h3>Professores Ativos</h3>
-              <p>8</p>
+              <p>4</p>
             </div>
           </div>
         </section>
@@ -30,14 +30,16 @@ function DashboardCoordenacaoPage() {
           <div className="project-list">
             <div className="project-item">
               <div className="project-details">
-                <h4>Desenvolvimento de App de Telemedicina</h4>
+                <h4>API de Pagamentos "PagueRápido"</h4>
                 <p>
-                  <strong>Empresa:</strong> Saúde Digital Ltda.
+                  <strong>Empresa:</strong> Fintech Soluções
                 </p>
                 <p>
-                  <strong>Descrição:</strong> Criação de um aplicativo móvel
-                  para agendamento e realização de consultas médicas online, com
-                  foco em segurança de dados e usabilidade.
+                  <strong>Descrição:</strong> Desenvolver uma API RESTful segura
+                  em Node.js para processar transações de cartão de crédito.
+                </p>
+                <p>
+                  <strong>Disciplina:</strong> Back-End
                 </p>
               </div>
               <div className="internal-comment-section">
@@ -66,14 +68,17 @@ function DashboardCoordenacaoPage() {
 
             <div className="project-item">
               <div className="project-details">
-                <h4>Plataforma de Gerenciamento de Resíduos</h4>
+                <h4>Sistema de Detecção de Fraude em Transações</h4>
                 <p>
-                  <strong>Empresa:</strong> EcoTech Soluções Ambientais
+                  <strong>Empresa:</strong> Banco Digital InvestMais
                 </p>
                 <p>
-                  <strong>Descrição:</strong> Desenvolvimento de sistema web
-                  para rastreamento e gestão de resíduos industriais, otimizando
-                  rotas de coleta e relatórios de conformidade.
+                  <strong>Descrição:</strong> Treinar um modelo de Machine
+                  Learning para identificar e bloquear transações financeiras
+                  suspeitas.
+                </p>
+                <p>
+                  <strong>Disciplina:</strong> Machine Learning
                 </p>
               </div>
               <div className="internal-comment-section">
@@ -105,15 +110,51 @@ function DashboardCoordenacaoPage() {
           <div className="project-list">
             <div className="project-item in-progress">
               <div className="project-details">
-                <h4>Sistema de Controle de Qualidade Agrícola</h4>
+                <h4>Dashboard de Análise de Vendas</h4>
                 <p>
-                  <strong>Empresa:</strong> Campo Saudável Agro
+                  <strong>Empresa:</strong> Nexus Dados & Analytics Ltda
                 </p>
                 <p>
-                  <strong>Professor:</strong> Prof. Ana Silva
+                  <strong>Professor:</strong> Prof. Elisa Fernandes
                 </p>
                 <p>
-                  <strong>Status:</strong> Em Desenvolvimento (70% concluído)
+                  <strong>Status:</strong> Em Desenvolvimento (50% concluído)
+                </p>
+              </div>
+              <div className="project-actions">
+                <Link to={"/projeto/:id"}>
+                  <button className="btn-view-details">Ver Detalhes</button>
+                </Link>
+                <button className="btn-complete">Concluir Projeto</button>
+              </div>
+              <div className="project-details">
+                <h4>Implementação de VPN e Topologia de Rede</h4>
+                <p>
+                  <strong>Empresa:</strong> ConectaSafe Infraestrutura
+                </p>
+                <p>
+                  <strong>Professor:</strong> Prof. Fábio Rocha
+                </p>
+                <p>
+                  <strong>Status:</strong> Em Desenvolvimento (75% concluído)
+                </p>
+              </div>
+              <div className="project-actions">
+                <Link to={"/projeto/:id"}>
+                  <button className="btn-view-details">Ver Detalhes</button>
+                </Link>
+                <button className="btn-complete">Concluir Projeto</button>
+              </div>
+              <div className="project-details">
+                <h4>Autenticação e Microsserviços</h4>
+                <p>
+                  <strong>Empresa:</strong> DevCore Soluções Digitais
+                </p>
+                <p>
+                  <strong>Professor:</strong> Prof. Glória Santos
+                </p>
+                <p>
+                  <strong>Status:</strong> Em Desenvolvimento (10% concluído)
                 </p>
               </div>
               <div className="project-actions">
