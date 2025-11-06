@@ -10,33 +10,60 @@ function DashboardEmpresaPage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const loadProject = () => {
-      fetch("http://localhost:3000/projetos")
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Projetos carregados:", data.length);
-          const mapped = data.map((projeto) => ({
-            id: projeto.id,
-            titulo: projeto.titulo,
-            responsavel: projeto.responsavel,
-            prazo: projeto.prazo,
-            progresso: projeto.progresso,
-            status: projeto.status,
-            disciplina: projeto.disciplina,
-            imagem: projeto.imagem,
-          }));
-
-          console.log("Projetos mapped", mapped);
-          setProjetos(mapped);
-          setIsLoading(false);
-        })
-        .catch((error) => {
-          console.error("Erro ao carregar projetos:", error);
-          setIsLoading(false);
-        });
-    };
-    loadProject();
+    console.log("A buscar projetos da empresa...");
+    setIsLoading(true);
+    setTimeout(() => {
+      const dadosExemplo = [
+        {
+          id: 1,
+          titulo: "Sistema de Gestão Interna",
+          responsavel: "Maria Silva",
+          prazo: "15/12/2025",
+          progresso: 70,
+          status: "Em Andamento",
+        },
+        {
+          id: 2,
+          titulo: "Portal do Cliente",
+          responsavel: "João Santos",
+          prazo: "30/11/2025",
+          progresso: 45,
+          status: "Em Andamento",
+        },
+        {
+          id: 3,
+          titulo: "App Mobile Corporativo",
+          responsavel: "Ana Costa",
+          prazo: "20/01/2026",
+          progresso: 90,
+          status: "Em Testes",
+        },
+        {
+          id: 4,
+          titulo: "Análise de Mercado IA",
+          responsavel: "Equipa Inovação",
+          prazo: "10/10/2025",
+          progresso: 15,
+          status: "Planeamento",
+        },
+        {
+          id: 5,
+          titulo: "Otimização Logística",
+          responsavel: "Pedro Almeida",
+          prazo: "01/03/2026",
+          progresso: 5,
+          status: "Pendente Aprovação",
+        },
+      ];
+      setProjetos(dadosExemplo);
+      setIsLoading(false);
+      console.log("Projetos da empresa carregados.");
+    }, 1200);
   }, []);
+
+  const handleVerDetalhes = (id) => {
+    console.log("Ver detalhes do projeto:", id);
+  };
 
   return (
     <MainLayout isDashboardPage={true}>
@@ -92,25 +119,17 @@ function DashboardEmpresaPage() {
             {isLoading ? (
               <p>A carregar projetos...</p>
             ) : projetos.length > 0 ? (
-              projetos.slice(4, 8).map((projeto) => (
+              projetos.map((projeto) => (
                 <ProjectCard
                   key={projeto.id}
-                  id={projeto.id}
-                  titulo={projeto.titulo}
-                  imagem={projeto.imagem}
-                  progresso={projeto.progresso}
+                  title={projeto.titulo}
+                  responsible={projeto.responsavel}
+                  progress={projeto.progresso}
+                  status={projeto.status}
+                  onDetailsClick={() => handleVerDetalhes(projeto.id)}
                 >
                   <p>
-                    <strong>Responsável:</strong> {projeto.responsavel}
-                  </p>
-                  <p>
-                    <strong>Disciplina:</strong> {projeto.disciplina}
-                  </p>
-                  <p>
                     <strong>Prazo:</strong> {projeto.prazo}
-                  </p>
-                  <p>
-                    <strong>Status:</strong> {projeto.status}
                   </p>
                 </ProjectCard>
               ))

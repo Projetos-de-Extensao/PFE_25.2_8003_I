@@ -8,7 +8,7 @@ function HomePage() {
   const [isLoadingHallOfFame, setIsLoadingHallOfFame] = useState(true);
 
   useEffect(() => {
-    console.log("useEffect executado! Carregando países...");
+    console.log("useEffect executado! Carregando projetos...");
 
     const loadProject = () => {
       fetch("http://localhost:3000/projetos")
