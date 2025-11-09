@@ -1,9 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Link } from "react-router-dom";
 import "../../styles/dashboard_professor.css";
 
 function DashboardProfessorPage() {
+  const [projetos, setProjetos] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadProject = () => {
+      fetch("http://localhost:3000/projetos")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Projetos carregados:", data.length);
+          const mapped = data.map((projeto) => ({
+            id: projeto.id,
+            titulo: projeto.titulo,
+            responsavel: projeto.responsavel,
+            prazo: projeto.prazo,
+            progresso: projeto.progresso,
+            status: projeto.status,
+            disciplina: projeto.disciplina,
+            imagem: projeto.imagem,
+          }));
+
+          console.log("Projetos mapped", mapped);
+          setProjetos(mapped);
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.error("Erro ao carregar projetos:", error);
+          setIsLoading(false);
+        });
+    };
+    loadProject();
+  }, []);
+
   return (
     <MainLayout isDashboardPage={true}>
       <div className="main-content">
@@ -18,7 +51,7 @@ function DashboardProfessorPage() {
               <div className="card-title">Projetos Ativos</div>
               <div className="card-icon bg-azul">📂</div>
             </div>
-            <div className="card-value">12</div>
+            <div className="card-value">4</div>
             <div className="card-description">
               +2 em relação ao mês anterior
             </div>
@@ -28,15 +61,15 @@ function DashboardProfessorPage() {
               <div className="card-title">Alunos Orientados</div>
               <div className="card-icon bg-amarelo">👥</div>
             </div>
-            <div className="card-value">34</div>
-            <div className="card-description">Distribuídos em 12 projetos</div>
+            <div className="card-value">20</div>
+            <div className="card-description">Distribuídos em 4 projetos</div>
           </div>
           <div className="card">
             <div className="card-header">
               <div className="card-title">Avaliações Pendentes</div>
               <div className="card-icon bg-azul">📝</div>
             </div>
-            <div className="card-value">5</div>
+            <div className="card-value">4</div>
             <div className="card-description">Precisam de sua atenção</div>
           </div>
           <div className="card">
@@ -58,153 +91,36 @@ function DashboardProfessorPage() {
           </div>
 
           <div className="table-container">
-            <form className="table-form">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Nome do Projeto</th>
-                    <th>Empresa</th>
-                    <th>Alunos</th>
-                    <th>Última Atualização</th>
-                    <th>Ações</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <input
-                        type="text"
-                        defaultValue="Sistema de Gestão Acadêmica"
-                        className="table-input"
-                      />
-                    </td>
-                    <td>
-                      <input
-                        type="text"
-                        defaultValue="Tech Solutions"
-                        className="table-input"
-                      />
-                    </td>
-                    <td>
-                      <input
-                        type="number"
-                        defaultValue="3"
-                        min="0"
-                        className="table-input number-input"
-                      />
-                    </td>
-                    <td>
-                      <input
-                        type="date"
-                        defaultValue="2023-10-15"
-                        className="table-input"
-                      />
-                    </td>
-                    <td>
-                      <Link to={"/gerenciamento-projeto/:id"}>
-                        <button className="btn btn-primary btn-small">
-                          Gerenciar
-                        </button>
-                      </Link>
-                      <button
-                        type="submit"
-                        className="btn btn-secondary btn-small"
-                      >
-                        Salvar
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input
-                        type="text"
-                        defaultValue="App de Finanças Pessoais"
-                        className="table-input"
-                      />
-                    </td>
-                    <td>
-                      <input
-                        type="text"
-                        defaultValue="Banco Digital"
-                        className="table-input"
-                      />
-                    </td>
-                    <td>
-                      <input
-                        type="number"
-                        defaultValue="4"
-                        min="0"
-                        className="table-input number-input"
-                      />
-                    </td>
-                    <td>
-                      <input
-                        type="date"
-                        defaultValue="2023-10-12"
-                        className="table-input"
-                      />
-                    </td>
-                    <td>
-                      <Link to={"/gerenciamento-projeto/:id"}>
-                        <button className="btn btn-primary btn-small">
-                          Gerenciar
-                        </button>
-                      </Link>
-                      <button
-                        type="submit"
-                        className="btn btn-secondary btn-small"
-                      >
-                        Salvar
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input
-                        type="text"
-                        defaultValue="Plataforma E-commerce"
-                        className="table-input"
-                      />
-                    </td>
-                    <td>
-                      <input
-                        type="text"
-                        defaultValue="Varejo Online"
-                        className="table-input"
-                      />
-                    </td>
-                    <td>
-                      <input
-                        type="number"
-                        defaultValue="3"
-                        min="0"
-                        className="table-input number-input"
-                      />
-                    </td>
-                    <td>
-                      <input
-                        type="date"
-                        defaultValue="2023-10-10"
-                        className="table-input"
-                      />
-                    </td>
-                    <td>
-                      <Link to={"/gerenciamento-projeto/:id"}>
-                        <button className="btn btn-primary btn-small">
-                          Gerenciar
-                        </button>
-                      </Link>
-                      <button
-                        type="submit"
-                        className="btn btn-secondary btn-small"
-                      >
-                        Salvar
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </form>
+            <div className="cards-container">
+              {isLoading ? (
+                <p>A carregar projetos...</p>
+              ) : projetos.length > 0 ? (
+                projetos.slice(4, 8).map((projeto) => (
+                  <ProjectCard
+                    key={projeto.id}
+                    id={projeto.id}
+                    titulo={projeto.titulo}
+                    imagem={projeto.imagem}
+                    progresso={projeto.progresso}
+                  >
+                    <p>
+                      <strong>Responsável:</strong> {projeto.responsavel}
+                    </p>
+                    <p>
+                      <strong>Disciplina:</strong> {projeto.disciplina}
+                    </p>
+                    <p>
+                      <strong>Prazo:</strong> {projeto.prazo}
+                    </p>
+                    <p>
+                      <strong>Status:</strong> {projeto.status}
+                    </p>
+                  </ProjectCard>
+                ))
+              ) : (
+                <p>Nenhum projeto encontrado.</p>
+              )}
+            </div>
           </div>
         </div>
       </div>
