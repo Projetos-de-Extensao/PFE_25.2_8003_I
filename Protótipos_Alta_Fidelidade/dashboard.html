@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Projetify</title>
+    <link rel="stylesheet" href="css/dashboard_style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Projetify</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html" class="ativo">Dashboard</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="boas-vindas">
+        <h2>Bem-vindo(a), <span id="nomeAluno">Aluno</span> 👋</h2>
+        <p>Aqui estão seus projetos e seu progresso dentro da plataforma.</p>
+      </section>
+
+      <section class="projetos">
+        <h3>Seus Projetos</h3>
+        <div class="cards-container">
+          <div class="card">
+            <h4>Projeto Integrador - App Sustentável</h4>
+            <p><strong>Orientador:</strong> Prof. Carlos Souza</p>
+            <div class="progresso">
+              <div class="barra">
+                <div class="preenchimento" style="width: 70%"></div>
+              </div>
+              <span>70% Concluído</span>
+            </div>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+
+          <div class="card">
+            <h4>Sistema de Agendamento Escolar</h4>
+            <p><strong>Orientador:</strong> Prof. Ana Pereira</p>
+            <div class="progresso">
+              <div class="barra">
+                <div class="preenchimento" style="width: 45%"></div>
+              </div>
+              <span>45% Concluído</span>
+            </div>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+
+          <div class="card">
+            <h4>Plataforma de Doações Online</h4>
+            <p><strong>Orientador:</strong> Prof. João Lima</p>
+            <div class="progresso">
+              <div class="barra">
+                <div class="preenchimento" style="width: 90%"></div>
+              </div>
+              <span>90% Concluído</span>
+            </div>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="atualizacoes">
+        <h3>Enviar Atualização</h3>
+        <form id="formAtualizacao">
+          <textarea
+            id="mensagem"
+            placeholder="Escreva aqui o progresso ou observações do seu projeto..."
+            required
+          ></textarea>
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Projetify - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      // Exemplo simples para pegar o nome do aluno (poderia vir do backend)
+      document.getElementById("nomeAluno").textContent =
+        localStorage.getItem("alunoNome") || "Aluno";
+
+      // Simulação de envio
+      document
+        .getElementById("formAtualizacao")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("Atualização enviada com sucesso!");
+          document.getElementById("mensagem").value = "";
+        });
+    </script>
+  </body>
+</html>

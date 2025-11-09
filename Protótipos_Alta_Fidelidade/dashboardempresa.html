@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Empresarial - Projetify</title>
+    <link rel="stylesheet" href="css/dashboard_empresa.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Projetify</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html" class="ativo">Dashboard</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="boas-vindas">
+        <h2>Bem-vindo(a), <span id="nomeEmpresa">Empresa</span> 👋</h2>
+        <p>Aqui está uma visão geral dos seus projetos, equipe e desempenho na plataforma.</p>
+      </section>
+
+      <div class="estatisticas">
+        <div class="card-estatistica">
+          <h3>12</h3>
+          <p>Projetos Ativos</p>
+        </div>
+        <div class="card-estatistica">
+          <h3>8</h3>
+          <p>Colaboradores</p>
+        </div>
+        <div class="card-estatistica">
+          <h3>85%</h3>
+          <p>Taxa de Conclusão</p>
+        </div>
+        <div class="card-estatistica">
+          <h3>4</h3>
+          <p>Projetos Finalizados</p>
+        </div>
+      </div>
+
+      <section class="projetos">
+        <h3>Projetos em Andamento</h3>
+        <div class="cards-container">
+          <div class="card">
+            <h4>Sistema de Gestão Interna</h4>
+            <p><strong>Responsável:</strong> Maria Silva</p>
+            <p><strong>Prazo:</strong> 15/12/2025</p>
+            <div class="progresso">
+              <div class="barra">
+                <div class="preenchimento" style="width: 70%"></div>
+              </div>
+              <span>70% Concluído</span>
+            </div>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+
+          <div class="card">
+            <h4>Portal do Cliente</h4>
+            <p><strong>Responsável:</strong> João Santos</p>
+            <p><strong>Prazo:</strong> 30/11/2025</p>
+            <div class="progresso">
+              <div class="barra">
+                <div class="preenchimento" style="width: 45%"></div>
+              </div>
+              <span>45% Concluído</span>
+            </div>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+
+          <div class="card">
+            <h4>App Mobile Corporativo</h4>
+            <p><strong>Responsável:</strong> Ana Costa</p>
+            <p><strong>Prazo:</strong> 20/01/2026</p>
+            <div class="progresso">
+              <div class="barra">
+                <div class="preenchimento" style="width: 90%"></div>
+              </div>
+              <span>90% Concluído</span>
+            </div>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="equipe">
+        <h3>Equipe</h3>
+        <div class="equipe-container">
+          <div class="membro-equipe">
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Maria Silva">
+            <h4>Maria Silva</h4>
+            <p>Gerente de Projetos</p>
+          </div>
+          <div class="membro-equipe">
+            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="João Santos">
+            <h4>João Santos</h4>
+            <p>Desenvolvedor Sênior</p>
+          </div>
+          <div class="membro-equipe">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Costa">
+            <h4>Ana Costa</h4>
+            <p>Designer UX/UI</p>
+          </div>
+          <div class="membro-equipe">
+            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Pedro Almeida">
+            <h4>Pedro Almeida</h4>
+            <p>Analista de Sistemas</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="atualizacoes">
+        <h3>Enviar Atualização</h3>
+        <form id="formAtualizacao">
+          <textarea
+            id="mensagem"
+            placeholder="Escreva aqui atualizações sobre projetos, necessidades ou observações..."
+            required
+          ></textarea>
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Projetify - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      // Exemplo simples para pegar o nome da empresa (poderia vir do backend)
+      document.getElementById("nomeEmpresa").textContent =
+        localStorage.getItem("empresaNome") || "Empresa";
+
+      // Simulação de envio
+      document
+        .getElementById("formAtualizacao")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("Atualização enviada com sucesso!");
+          document.getElementById("mensagem").value = "";
+        });
+    </script>
+  </body>
+</html>

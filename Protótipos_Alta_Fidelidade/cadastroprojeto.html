@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar Projeto - Projetify</title>
+    <link rel ="stylesheet" href="css/cadastro_projeto.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Projetify</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="formCadastroProjeto">
+        <div class="form-header">
+          <h2>Cadastrar Novo Projeto</h2>
+          <p>Preencha os dados do projeto abaixo</p>
+        </div>
+
+        <div class="form-group">
+          <label for="titulo">Título do Projeto</label>
+          <input
+            type="text"
+            id="titulo"
+            name="titulo"
+            placeholder="Digite o título do projeto"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="descricao">Descrição</label>
+          <textarea
+            id="descricao"
+            name="descricao"
+            placeholder="Descreva o objetivo e escopo do projeto"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecione...</option>
+              <option value="tecnologia">Tecnologia</option>
+              <option value="pesquisa">Pesquisa</option>
+              <option value="desenvolvimento">Desenvolvimento</option>
+              <option value="inovacao">Inovação</option>
+              <option value="social">Social</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="prioridade">Prioridade</label>
+            <select id="prioridade" name="prioridade" required>
+              <option value="">Selecione...</option>
+              <option value="baixa">Baixa</option>
+              <option value="media">Média</option>
+              <option value="alta">Alta</option>
+              <option value="urgente">Urgente</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="data_inicio">Data de Início</label>
+            <input
+              type="date"
+              id="data_inicio"
+              name="data_inicio"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="data_termino">Data de Término</label>
+            <input
+              type="date"
+              id="data_termino"
+              name="data_termino"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="responsavel">Responsável</label>
+          <input
+            type="text"
+            id="responsavel"
+            name="responsavel"
+            placeholder="Nome do responsável pelo projeto"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="equipe">Membros da Equipe</label>
+          <input
+            type="text"
+            id="equipe"
+            name="equipe"
+            placeholder="Nomes dos membros (separados por vírgula)"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="orcamento">Orçamento (R$)</label>
+          <input
+            type="number"
+            id="orcamento"
+            name="orcamento"
+            placeholder="Valor do orçamento"
+            min="0"
+            step="0.01"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select id="status" name="status" required>
+            <option value="">Selecione...</option>
+            <option value="planejamento">Planejamento</option>
+            <option value="andamento">Em Andamento</option>
+            <option value="pausado">Pausado</option>
+            <option value="concluido">Concluído</option>
+          </select>
+        </div>
+
+        <button type="submit">Cadastrar Projeto</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>© 2025 Projetify - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      document.getElementById('formCadastroProjeto').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Validação básica das datas
+        const dataInicio = new Date(document.getElementById('data_inicio').value);
+        const dataTermino = new Date(document.getElementById('data_termino').value);
+        
+        if (dataTermino < dataInicio) {
+          alert('A data de término não pode ser anterior à data de início!');
+          return;
+        }
+        
+        // Simulação de cadastro bem-sucedido
+        alert('Projeto cadastrado com sucesso!');
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
