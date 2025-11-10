@@ -49,7 +49,7 @@ title: Design Thinking
 - **Pesquisa**:
   Site 1: Plataforma A
 
-    <img width="1498" height="825" alt="Image" src="https://github.com/user-attachments/assets/6c1d7301-cc2d-4f3f-b3eb-d6a717e507db" />
+  ![Image](https://github.com/user-attachments/assets/6c1d7301-cc2d-4f3f-b3eb-d6a717e507db)
 
   Funcionalidades:
 
@@ -61,7 +61,7 @@ title: Design Thinking
 
   Site 2: Zoho Projects
 
-    <img width="2000" height="1250" alt="Image" src="https://github.com/user-attachments/assets/35ed07a6-8715-45f2-a545-f3ef3527a672" />
+  ![Image](https://github.com/user-attachments/assets/35ed07a6-8715-45f2-a545-f3ef3527a672)
 
   Funcionalidades:
 
@@ -85,7 +85,7 @@ title: Design Thinking
 
   Site 4: Artia
 
-    <img width="1344" height="557" alt="Image" src="https://github.com/user-attachments/assets/db3ba676-c528-4a27-aa7c-ab41b41c27ca" />
+  ![Image](https://github.com/user-attachments/assets/db3ba676-c528-4a27-aa7c-ab41b41c27ca)
 
   Funcionalidades:
 
@@ -128,67 +128,60 @@ title: Design Thinking
 
 - **Brainstorming**:
 
-  #### 1. Usuários do Sistema
+#### 1. Usuários do Sistema
 
-  - **Empresas externas:** cadastrar projetos, acompanhar status, avaliar resultados.
-  - **Coordenação:** aprovar projetos, gerenciar usuários, gerar relatórios.
-  - **Professores:** orientar projetos, avaliar entregas, interagir com alunos.
-  - **Alunos:** ser alocado em projetos, submeter entregas, acompanhar feedback.
+- **Empresas externas:** cadastrar projetos, acompanhar status, avaliar resultados.
+- **Coordenação:** aprovar projetos, gerenciar usuários, gerar relatórios.
+- **Professores:** orientar projetos, avaliar entregas, interagir com alunos.
+- **Alunos:** ser alocado em projetos, submeter entregas, acompanhar feedback.
 
-  #### 2. Estrutura/Funcionalidades
+#### 2. Estrutura/Funcionalidades
 
-  ### Home (página que pode ser visualizada sem login)
+### Home (página que pode ser visualizada sem login)
 
-  - Hall da Fama com projetos anteriores
-  - Seção "Como Funciona":
+- Hall da Fama com projetos anteriores
+- Seção "Como Funciona":
     1. Empresa cadastra projeto
     2. Coordenação aprova
     3. Professor gerencia
     4. Aluno executa
-  - Botões para realizar Cadastro e Login de usuários
+- Botões para realizar Cadastro e Login de usuários
 
-  ### Autenticação
+### Autenticação
 
-  - Tela de Cadastro:
-
-  1. Selecionar o tipo de perfil (Empresa, Coordenação, Professor ou Aluno)
-  2. Formulário para preencher e-mail/matrícula, nome e senha
+- Tela de Cadastro:
+    1. Selecionar o tipo de perfil (Empresa, Coordenação, Professor ou Aluno)
+    2. Formulário para preencher e-mail/matrícula, nome e senha
 
   ***
 
-  - Tela de Login:
+- Tela de Login:
+    1. Preencher formulário com e-mail/matrícula e senha.
 
-  1. Preencher formulário com e-mail/matrícula e senha.
+### Empresa Externa
 
-  ### Empresa Externa
+- Dashboard com:
+    1. Área para cadastrar novo projeto
+    2. Caso já houver cadastrado um projeto, ele será exibido com seu status (pendente, aprovado,...)
+    3. Poderá acessar seus projetos para acompanhar o andamento
 
-  - Dashboard com:
+### Coordenação
 
-  1. Área para cadastrar novo projeto
-  2. Caso já houver cadastrado um projeto, ele será exibido com seu status (pendente, aprovado,...)
-  3. Poderá acessar seus projetos para acompanhar o andamento
+- Dashboard com:
+    1. Lista de projetos cadastrados para análise, com opções de aprovar, recusar ou solicitar ajustes com comentários
+    2. Após aprovar, deve selecionar o professor responsável
+    3. Lista com projetos já em andamento
 
-  ### Coordenação
+### Professor
 
-  - Dashboard com:
+- Dashboard com:
+    1. Lista com os projetos a qual foi designado
+    2. Dentro dos projetos, ele poderá selecionar os alunos que vão participar, acompanhar as atividades e dar feedback
 
-  1. Lista de projetos cadastrados para análise, com opções de aprovar, recusar ou solicitar ajustes com comentários
-  2. Após aprovar, deve selecionar o professor responsável
-  3. Lista com projetos já em andamento
-
-  ### Professor
-
-  - Dashboard com:
-
-  1. Lista com os projetos a qual foi designado
-  2. Dentro dos projetos, ele poderá selecionar os alunos que vão participar, acompanhar as atividades e dar feedback
-
-  ### Aluno
-
-  - Dashboard com:
-
-  1. Projetos a qual foi designado pelo professor
-  2. Onde dentro da página do projeto, ele poderá realizar as entregas e acompanhar o feedback
+### Aluno
+- Dashboard com:
+    1. Projetos a qual foi designado pelo professor
+    2. Onde dentro da página do projeto, ele poderá realizar as entregas e acompanhar o feedback
 
 #### **3.4. Prototipagem**
 
