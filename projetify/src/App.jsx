@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-// Importe TODAS as suas páginas
+
 import HomePage from './pages/Home/HomePage';
 import CadastroUsuarioPage from './pages/CadastroUsuario/CadastroUsuarioPage';
 import LoginPage from './pages/Login/LoginPage';
